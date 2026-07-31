@@ -1,0 +1,111 @@
+# Changelog — July 2026 revision
+
+From an 18-page, 18-forecast, 10-figure draft to a 10-page, 14-forecast, 5-figure submission. Original text, figures, and build code are preserved in `archive/original/`. Forecast numbers below are given as **old → new** where they changed.
+
+---
+
+## 1. Structure
+
+| | Before | After |
+|---|---|---|
+| Pages | 18 | **10** |
+| Forecasts | 18 | **14** |
+| Figures | 10 | **5** |
+| Words | 8,010 | ~4,900 |
+| Part 3 begins | page 12 | page 4 |
+
+Page allocation: forecasts on 1–2, framework on 2–4, appendix on 5–9, sources/method/self-audit on 10.
+
+Renumbering (old → new): 1→1, 2→2, 4→3, 5→4, 6→5, 7→6, 8→7, 9→8, 10→9, 11→10, 12→11, 13→12, 15→13, 17→14. Editing was done under original numbers and renumbered once at the end, with a scripted sweep over prose, both tables, figure captions, in-figure labels, and the sources block; every changed line was reviewed against a diff.
+
+## 2. Forecasts removed (full text in `archive/forecasts_cut.md`)
+
+- **Old 3 (LA Metro delivery)** — a domestic transit program reaching the thesis only by analogy to "physical delivery," which the datacenter, capex, and depreciation forecasts already test inside the AI buildout.
+- **Old 14 (USD/JPY volatility)** — flagged by all four reviewers; its own resolution language conceded the trigger was "mechanism-blind," so a generic carry unwind would resolve YES with no mercantilism or AI in the chain.
+- **Old 16 (federal funds rate)** — one causal link past the core-PCE forecast, with a recession unrelated to the framework as its entire NO case.
+- **Old 18 (sector returns)** — the longest market chain in the set, and the draft conceded index concentration could swamp the thesis in either direction.
+
+Held in reserve, not cut: old 11 (LMArena) and old 13 (ASEAN imports).
+
+## 3. Probabilities changed
+
+Every change is derived in `calibration.md`. No probability, threshold, date, or resolution criterion was changed silently.
+
+| Forecast | Was | Now | Why |
+|---|---|---|---|
+| 2 — token prices | 90% | **80%** | Under the newly pre-registered selection rule, YES requires the *top-designated* tier to halve. The July 31, 2026 baseline shows top-tier prices have risen since 2025 while cuts land on lower tiers — premiumization is adverse evidence the 90% did not price. |
+| 6 (was 7) — EU enforcement | 62% | **35%** | Recalculated from scratch, not adjusted. The Digital Omnibus moved Annex III high-risk obligations to December 2027, removing the August 2026 AI Act trigger from the window's first sixteen months. Base rate: one employee-monitoring proceeding against the six firms in eight years, one AI-training proceeding (annulled), zero combining both. |
+| 7 (was 8) — capacity disclosure | 65% | **56%** | The criterion measures disclosure, not cancellation. Two stages now derived independently — 0.80 that a ≥1 GW pullback occurs, 0.70 that the company itself puts it on the record — and the product printed as it falls out. The 0.70 reflects that the most prominent pullback episode produced analyst figures and a corporate clarification, never a company-quantified number, which the criterion excludes. |
+
+Unchanged and re-checked: 1 (85%), 3 (65%), 4 (70%), 5 (68%), 8 (30%), 9 (30%), 10 (20%), 11 (30%), 12 (38%), 13 (55%), 14 (70%).
+
+## 4. Resolution criteria changed
+
+- **Forecast 2** — selection rule pre-registered in full (top-designated general-purpose tier, successor inheritance, premium tiers only if the page designates them top, output rates only, provider against its own baseline). The draft's "most capable" was unresolvable once premium tiers existed.
+- **Forecast 5 (was 6)** — fallback deleted. The draft substituted MIIT China installations over the last available IFR world total, changing source and denominator at once. Now: **unresolved** if the IFR discontinues the series. Also clarified that resolution follows the first published IFR figure for calendar-2027 installations, since the cited "World Robotics 2028" edition does not exist yet.
+- **Forecast 10 (was 11)** — Artificial Analysis fallback deleted; a different benchmark can reverse the outcome. Now **unresolved** if LMArena is discontinued.
+- **Forecast 7 (was 8)** — criterion kept as written (disclosure), with the two-stage structure stated explicitly in the derivation so the measured event is unambiguous.
+
+## 5. Corrections forced by the evidence
+
+Each item was treated as a lead and re-checked against the primary record; `verification/` holds the per-claim findings.
+
+- **MOFCOM "enforcement bounty."** The draft attributed a formalized enforcement bounty to the export-control listing. The listing instrument — Announcement No. 23 of 2026, June 22 — contains prohibitions and a licensing-exception process, no bounty. A reward mechanism for reporting export-control violations does exist, but as a **separate instrument** (Announcement No. 26 of 2026, effective July 1). The manuscript now cites the two separately and no longer rests forecast 4's linkage on a bounty.
+- **EU AI Act timing.** The draft's claim that general application from August 2, 2026 put workplace AI systems in the high-risk tier from that date is wrong as of this revision: Regulation (EU) 2026/1744 defers Annex III obligations to **December 2, 2027**. Removed from Part 2 §3 and Thread 2; forecast 6 now rests on GDPR, national labour law, and data-protection authorities, and was repriced.
+- **Meta MCI figures.** The 45,000-table exposure and the 1,600-signature petition are **press reporting** citing an internal security notice, not company disclosure. Now attributed as such. Company-confirmed: the program, the absence of a broad opt-out, the pause. The draft's "tax filings and medical data" characterization traced only to a single anonymous-employee account in secondary aggregators and is **cut**.
+- **Garante v. OpenAI.** Verification surfaced what the draft did not know: the €15M fine was **annulled** on jurisdictional grounds in March 2026. This weakens the AI-training enforcement base rate and is stated in the derivation.
+- **CNIL v. Amazon France Logistique.** The €32M fine was **reduced to €15M on appeal** in December 2025. Recorded.
+- **July FOMC hold and July 23 Section 301 action.** Both confirmed and kept. Two details corrected: there was no July SEP (the cadence is quarterly; the June 2026 SEP is the relevant projection), and the Section 301 exemption is a defined product carve-out rather than the draft's "goods the US cannot source elsewhere" framing.
+- **Core PCE vintage convention.** First prints hold everywhere, in prose and in figures, and the October 2025 gap is drawn as a gap. The draft's trailing note had already corrected the run to seven months at or above 3.0%; that correction is carried into the text.
+- **IFR 2024 share.** 54.4% is *our* computation from 295,000 ÷ 542,076; the IFR's own prose says 54%. The manuscript now says so, which matters because the threshold is >54.0%.
+- **"The subsidy is gone."** Factually wrong and now removed. China's NEV purchase-tax relief was **halved** for 2026–27 (50% reduction, capped at RMB 15,000) rather than eliminated, and the trade-in program was renewed for 2026. Figure 1's title is now descriptive.
+- **Amazon depreciation.** The draft conflated two things: the $920M Q4-2024 accelerated-depreciation charge on early-retired hardware, and the separate January 2025 useful-life reduction for a subset of servers and network equipment. Table 1 separates them.
+- **Korea unmanned-store count.** Unverifiable; cut.
+- **Sell-side capex markers.** The ">$1.0T 2027 consensus" and "UBS ≈ +6% for 2028" could not be attributed to any citable published estimate. Deleted from the figure. The manuscript's claim is narrowed to what is defensible: we could locate no published estimate modelling a 2028 contraction.
+- **Trailing verification note (draft page 18).** Deleted, and the verification it called for was performed instead. Where it could not be completed, the specific gap is listed in §8 below rather than announced to reviewers inside the manuscript.
+
+## 6. Figures
+
+Deleted (PNGs in `archive/figures_cut/`, code in `archive/original/figures.py`):
+
+- **Portfolio map** — a full page of metadata with no evidence; replaced by the Part 1 forecast list. It also plotted two unsourced "reference priors" as if they were data.
+- **Income vs. EV adoption scatter** — mixed BEV-only with BEV+PHEV observations, blended rounded and approximated points, plotted an aggregate ("EU") beside its own members, and inferred the effect of a policy variable it never plotted. The Thailand/Japan contrast survives in Part 2 prose with single-source attribution.
+- **LA Metro burn-up** — went with its forecast; also extrapolated a trend from two observations.
+- **Server useful lives** → **Table 1**. The chart required inventing a midpoint for Meta's 4–5-year range (an interpolation) and collapsed a subset-only Amazon change into a company-wide line. The table carries filing date, equipment class, and exact old→new ranges.
+- **Robot share** → prose. Two edition-sourced observations and a flat-trend threshold; two sentences carry it, which holds the five-figure cap.
+
+Rebuilt (all five): one palette with fixed semantics (navy observed, slate baseline, orange estimate, red dashed threshold only), one font family from bundled TTFs, 6.7-inch design width, 8pt minimum text verified by parsing the exported SVGs, y-gridlines only, top and right spines removed, direct labels rather than legends, SVG plus 300-dpi PNG.
+
+Specific figure fixes: NEV chart retitled factually and put on one consistent CPCA retail definition; oil figure's right panel relabelled as **a scale comparison, not a decomposition**, with the misleading "of which structural" construction removed and all derived values hatched as estimates, and the derivation and Kpler estimates separated into distinct bars; capex chart distinguishes actuals from guidance and states that guidance boundaries differ from the forecast's own definition; token chart carries one provider labelled as a reference class with no implied quality adjustment; macro chart reduced from three unreadable panels to two legible ones, first prints throughout, with the partial FY2026 duties bar **excluded** rather than annualized.
+
+## 7. Framework and prose
+
+- "Error correction" is now **operationally defined**: a system keeps it if, when a delivery or demand signal moves against a standing commitment, some institution's recorded behavior adjusts in the same direction within about twenty-four months. Forecasts 3, 7, 8, and 11 are identified as direct measurements of that elasticity.
+- Two-sentence plain-language definition of modern mercantilism added at the top of Part 2.
+- Conviction taxonomy (structural / leaning / contest) deleted from prose, headers, and figure colours. Figure colour now encodes data status, never conviction.
+- Epistemological-commitment paragraph cut.
+- Part 1 is one sentence per forecast, probability leading; resolution mechanics moved to Table 2.
+- Sentences over roughly 40 words broken throughout.
+- Falsification block kept nearly intact, as ruled.
+- Title: *Control Without Feedback: Forecasts on AI and Modern Mercantilism*.
+
+## 8. Claims that remain unresolved — read this before submitting
+
+Verification ran against a hard environmental limit: **every direct fetch of a primary document returned 403** through this environment's proxy (BEA, SEC EDGAR, the Federal Reserve, Treasury, IFR, provider pricing pages, and `web.archive.org`), and the session's search allowance was exhausted. Findings therefore rest on search-mediated reporting that quotes the primary sources, labelled by channel in `verification/`. Outstanding items, in priority order:
+
+1. **Core PCE monthly first prints, Jan 2025 – Jun 2026** (`carried_unverified`). Eighteen values behind Figure 4 and the worked derivation for forecast 13. The 2025 values are consistent with the published record; the 2026 values could not be checked at all. **Largest evidence risk in the submission, and it touches a live forecast.**
+2. **Forecast 2's baseline pricing snapshot** (`snapshot_secondary_only`). The value the forecast resolves against rests on secondary reporting. `data/snapshots/README.md` has the exact capture commands; this needs one unrestricted network session.
+3. **Combined capex 2019–2023** (`carried_unverified`). Standard filing figures, but not re-read from the filings this pass. 2024 and 2025 are search-confirmed.
+4. **FY2023 and FY2024 customs duties** (`triangulated`) — consistent across sources but not directly quoted from the MTS.
+5. **IEA world-supply shortfall upper bound (13.6 mb/d).** March (10.1) and April (12.8) were confirmed; the 13.6 figure was not located in a world-supply table. The manuscript now says "roughly 10 to 13" and the figure hatches the upper segment.
+6. **LMArena current state.** Could not be checked; forecast 10's 20% rests on the structural argument, not on today's leaderboard.
+7. **Thailand Chinese-brand share.** Verified in a 70–85% range, not at a clean three-quarters; the manuscript now says "most of them Chinese brands."
+8. **Japan EV share.** Denominator-sensitive (1.3–2% BEV-only, ~2.7% BEV+PHEV); the manuscript now says "below 3% even counting plug-in hybrids."
+
+## 9. Reproducibility
+
+- All hard-coded absolute paths (`/home/claude/ftf/`, `/mnt/user-data/outputs/`) replaced with project-relative `pathlib` paths.
+- One command builds everything: `python3 build_pdf.py` regenerates the five figures from `data/`, builds the PDF, and renders `qa/page_01.png`–`page_10.png`.
+- The build **refuses to run** if unresolved `{{PENDING:...}}` markers remain in the manuscript, and **fails loudly** if the bundled fonts are missing rather than silently substituting DejaVu — the exact drift the figure spec warned about.
+- Fonts bundled in `fonts/`. Dependencies pinned in `requirements.txt`. Every figure's inputs are a CSV under `data/`, and every plotted point has a row in `data/figure_sources.csv` carrying source, vintage, URL, access date, transformation, and verification status.
+- No repository was created or published, per ruling.

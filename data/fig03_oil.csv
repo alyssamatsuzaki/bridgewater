@@ -3,6 +3,6 @@ A,derivation_bev,BEV cars,0.38,,mbd,estimate,estimate
 A,derivation_phev,PHEV cars,0.07,,mbd,estimate,estimate
 A,kpler_gasoline,gasoline,0.54,,mbd,estimate,estimate
 A,kpler_diesel,diesel,0.50,,mbd,estimate,estimate
-B,world_shortfall,World supply shortfall\n(Mar–May range; IEA),10.0,13.6,mbd,observed_range,search_confirmed
-B,china_import_reduction,China crude-import\nreduction (≈ −40%),4.0,,mbd,observed_approx,search_confirmed
-B,structural_displacement,Structural EV/fleet\ndisplacement (estimate),1.0,,mbd,estimate,estimate
+B,world_shortfall,World supply\nshortfall (IEA),10.1,12.8,mbd,observed_range,search_confirmed
+B,china_import_reduction,China crude imports\n(≈ −40%),4.0,,mbd,observed_approx,search_confirmed
+B,structural_displacement,Structural fleet\ndisplacement (est.),1.0,,mbd,estimate,estimate

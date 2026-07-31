@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="535.69625pt" height="228.007859pt" viewBox="0 0 535.69625 228.007859" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="535.71625pt" height="230.932922pt" viewBox="0 0 535.71625 230.932922" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-31T01:16:57.173443</dc:date>
+    <dc:date>2026-07-31T21:45:00.827261</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
-      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
      </cc:Agent>
     </dc:creator>
    </cc:Work>
@@ -21,9 +21,9 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 228.007859 
-L 535.69625 228.007859 
-L 535.69625 0 
+   <path d="M 0 230.932922 
+L 535.71625 230.932922 
+L 535.71625 0 
 L 0 0 
 z
 " style="fill: #ffffff"/>
@@ -41,66 +41,66 @@ z
     <g id="xtick_1">
      <g id="line2d_1">
       <defs>
-       <path id="m50891ccbd5" d="M 0 0 
+       <path id="m40fbd3579a" d="M 0 0 
 L 0 3.5 
 " style="stroke: #1a1d21; stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#m50891ccbd5" x="65.088" y="165.550359" style="fill: #1a1d21; stroke: #1a1d21; stroke-width: 0.8"/>
+       <use xlink:href="#m40fbd3579a" x="65.088" y="165.550359" style="fill: #1a1d21; stroke: #1a1d21; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_1">
-      <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1a1d21" x="65.088" y="179.009031" transform="rotate(-0 65.088 179.009031)">2023</text>
+      <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1a1d21" x="65.088" y="179.008367" transform="rotate(-0 65.088 179.008367)">2023</text>
      </g>
     </g>
     <g id="xtick_2">
      <g id="line2d_2">
       <g>
-       <use xlink:href="#m50891ccbd5" x="122.604923" y="165.550359" style="fill: #1a1d21; stroke: #1a1d21; stroke-width: 0.8"/>
+       <use xlink:href="#m40fbd3579a" x="122.604923" y="165.550359" style="fill: #1a1d21; stroke: #1a1d21; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_2">
-      <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1a1d21" x="122.604923" y="179.009031" transform="rotate(-0 122.604923 179.009031)">2024</text>
+      <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1a1d21" x="122.604923" y="179.008367" transform="rotate(-0 122.604923 179.008367)">2024</text>
      </g>
     </g>
     <g id="xtick_3">
      <g id="line2d_3">
       <g>
-       <use xlink:href="#m50891ccbd5" x="180.121846" y="165.550359" style="fill: #1a1d21; stroke: #1a1d21; stroke-width: 0.8"/>
+       <use xlink:href="#m40fbd3579a" x="180.121846" y="165.550359" style="fill: #1a1d21; stroke: #1a1d21; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_3">
-      <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1a1d21" x="180.121846" y="179.009031" transform="rotate(-0 180.121846 179.009031)">2025</text>
+      <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1a1d21" x="180.121846" y="179.008367" transform="rotate(-0 180.121846 179.008367)">2025</text>
      </g>
     </g>
     <g id="xtick_4">
      <g id="line2d_4">
       <g>
-       <use xlink:href="#m50891ccbd5" x="237.638769" y="165.550359" style="fill: #1a1d21; stroke: #1a1d21; stroke-width: 0.8"/>
+       <use xlink:href="#m40fbd3579a" x="237.638769" y="165.550359" style="fill: #1a1d21; stroke: #1a1d21; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_4">
-      <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1a1d21" x="237.638769" y="179.009031" transform="rotate(-0 237.638769 179.009031)">2026</text>
+      <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1a1d21" x="237.638769" y="179.008367" transform="rotate(-0 237.638769 179.008367)">2026</text>
      </g>
     </g>
     <g id="xtick_5">
      <g id="line2d_5">
       <g>
-       <use xlink:href="#m50891ccbd5" x="295.155692" y="165.550359" style="fill: #1a1d21; stroke: #1a1d21; stroke-width: 0.8"/>
+       <use xlink:href="#m40fbd3579a" x="295.155692" y="165.550359" style="fill: #1a1d21; stroke: #1a1d21; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_5">
-      <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1a1d21" x="295.155692" y="179.009031" transform="rotate(-0 295.155692 179.009031)">2027</text>
+      <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1a1d21" x="295.155692" y="179.008367" transform="rotate(-0 295.155692 179.008367)">2027</text>
      </g>
     </g>
     <g id="xtick_6">
      <g id="line2d_6">
       <g>
-       <use xlink:href="#m50891ccbd5" x="352.672615" y="165.550359" style="fill: #1a1d21; stroke: #1a1d21; stroke-width: 0.8"/>
+       <use xlink:href="#m40fbd3579a" x="352.672615" y="165.550359" style="fill: #1a1d21; stroke: #1a1d21; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_6">
-      <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1a1d21" x="352.672615" y="179.009031" transform="rotate(-0 352.672615 179.009031)">2028</text>
+      <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1a1d21" x="352.672615" y="179.008367" transform="rotate(-0 352.672615 179.008367)">2028</text>
      </g>
     </g>
    </g>
@@ -109,16 +109,16 @@ L 0 3.5
      <g id="line2d_7">
       <path d="M 65.088 155.896297 
 L 438.948 155.896297 
-" clip-path="url(#pbfbc0b6967)" style="fill: none; stroke-dasharray: 2.1,2.1; stroke-dashoffset: 0; stroke: #d8dbe0; stroke-width: 0.7"/>
+" clip-path="url(#p42fe898daf)" style="fill: none; stroke-dasharray: 2.1,2.1; stroke-dashoffset: 0; stroke: #d8dbe0; stroke-width: 0.7"/>
      </g>
      <g id="line2d_8">
       <defs>
-       <path id="mf3568253df" d="M 0 0 
+       <path id="mab7e8e0465" d="M 0 0 
 L -3.5 0 
 " style="stroke: #1a1d21; stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#mf3568253df" x="65.088" y="155.896297" style="fill: #1a1d21; stroke: #1a1d21; stroke-width: 0.8"/>
+       <use xlink:href="#mab7e8e0465" x="65.088" y="155.896297" style="fill: #1a1d21; stroke: #1a1d21; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_7">
@@ -129,11 +129,11 @@ L -3.5 0
      <g id="line2d_9">
       <path d="M 65.088 125.908042 
 L 438.948 125.908042 
-" clip-path="url(#pbfbc0b6967)" style="fill: none; stroke-dasharray: 2.1,2.1; stroke-dashoffset: 0; stroke: #d8dbe0; stroke-width: 0.7"/>
+" clip-path="url(#p42fe898daf)" style="fill: none; stroke-dasharray: 2.1,2.1; stroke-dashoffset: 0; stroke: #d8dbe0; stroke-width: 0.7"/>
      </g>
      <g id="line2d_10">
       <g>
-       <use xlink:href="#mf3568253df" x="65.088" y="125.908042" style="fill: #1a1d21; stroke: #1a1d21; stroke-width: 0.8"/>
+       <use xlink:href="#mab7e8e0465" x="65.088" y="125.908042" style="fill: #1a1d21; stroke: #1a1d21; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_8">
@@ -144,11 +144,11 @@ L 438.948 125.908042
      <g id="line2d_11">
       <path d="M 65.088 95.919786 
 L 438.948 95.919786 
-" clip-path="url(#pbfbc0b6967)" style="fill: none; stroke-dasharray: 2.1,2.1; stroke-dashoffset: 0; stroke: #d8dbe0; stroke-width: 0.7"/>
+" clip-path="url(#p42fe898daf)" style="fill: none; stroke-dasharray: 2.1,2.1; stroke-dashoffset: 0; stroke: #d8dbe0; stroke-width: 0.7"/>
      </g>
      <g id="line2d_12">
       <g>
-       <use xlink:href="#mf3568253df" x="65.088" y="95.919786" style="fill: #1a1d21; stroke: #1a1d21; stroke-width: 0.8"/>
+       <use xlink:href="#mab7e8e0465" x="65.088" y="95.919786" style="fill: #1a1d21; stroke: #1a1d21; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_9">
@@ -159,11 +159,11 @@ L 438.948 95.919786
      <g id="line2d_13">
       <path d="M 65.088 65.93153 
 L 438.948 65.93153 
-" clip-path="url(#pbfbc0b6967)" style="fill: none; stroke-dasharray: 2.1,2.1; stroke-dashoffset: 0; stroke: #d8dbe0; stroke-width: 0.7"/>
+" clip-path="url(#p42fe898daf)" style="fill: none; stroke-dasharray: 2.1,2.1; stroke-dashoffset: 0; stroke: #d8dbe0; stroke-width: 0.7"/>
      </g>
      <g id="line2d_14">
       <g>
-       <use xlink:href="#mf3568253df" x="65.088" y="65.93153" style="fill: #1a1d21; stroke: #1a1d21; stroke-width: 0.8"/>
+       <use xlink:href="#mab7e8e0465" x="65.088" y="65.93153" style="fill: #1a1d21; stroke: #1a1d21; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_10">
@@ -174,11 +174,11 @@ L 438.948 65.93153
      <g id="line2d_15">
       <path d="M 65.088 48.389525 
 L 438.948 48.389525 
-" clip-path="url(#pbfbc0b6967)" style="fill: none; stroke-dasharray: 2.1,2.1; stroke-dashoffset: 0; stroke: #d8dbe0; stroke-width: 0.7"/>
+" clip-path="url(#p42fe898daf)" style="fill: none; stroke-dasharray: 2.1,2.1; stroke-dashoffset: 0; stroke: #d8dbe0; stroke-width: 0.7"/>
      </g>
      <g id="line2d_16">
       <g>
-       <use xlink:href="#mf3568253df" x="65.088" y="48.389525" style="fill: #1a1d21; stroke: #1a1d21; stroke-width: 0.8"/>
+       <use xlink:href="#mab7e8e0465" x="65.088" y="48.389525" style="fill: #1a1d21; stroke: #1a1d21; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_11">
@@ -186,13 +186,13 @@ L 438.948 48.389525
      </g>
     </g>
     <g id="text_12">
-     <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1a1d21" x="36.095891" y="94.864359" transform="rotate(-90 36.095891 94.864359)">Output list price, $ per 1M tokens (log)</text>
+     <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1a1d21" x="35.821633" y="94.864359" transform="rotate(-90 35.821633 94.864359)">Output list price, $ per 1M tokens (log)</text>
     </g>
    </g>
    <g id="line2d_17">
     <path d="M 268.793769 108.366037 
 L 361.300154 108.366037 
-" clip-path="url(#pbfbc0b6967)" style="fill: none; stroke-dasharray: 4.81,2.08; stroke-dashoffset: 0; stroke: #c0392b; stroke-width: 1.3"/>
+" clip-path="url(#p42fe898daf)" style="fill: none; stroke-dasharray: 4.81,2.08; stroke-dashoffset: 0; stroke: #c0392b; stroke-width: 1.3"/>
    </g>
    <g id="patch_3">
     <path d="M 65.088 165.550359 
@@ -214,44 +214,44 @@ L 216.069923 108.366037
 L 216.069923 125.908042 
 L 267.835154 125.908042 
 L 267.835154 125.908042 
-" clip-path="url(#pbfbc0b6967)" style="fill: none; stroke: #00204e; stroke-width: 2; stroke-linecap: square"/>
+" clip-path="url(#p42fe898daf)" style="fill: none; stroke: #00204e; stroke-width: 2; stroke-linecap: square"/>
    </g>
    <g id="text_13">
-    <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; fill: #00204e" transform="translate(79.946538 33.583772)">GPT-4</text>
+    <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; fill: #00204e" transform="translate(79.946538 32.899589)">GPT-4</text>
     <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; fill: #00204e" transform="translate(79.946538 43.101913)">$60</text>
    </g>
    <g id="text_14">
-    <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; fill: #00204e" transform="translate(118.291154 63.572028)">GPT-4 Turbo</text>
+    <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; fill: #00204e" transform="translate(118.291154 62.887844)">GPT-4 Turbo</text>
     <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; fill: #00204e" transform="translate(118.291154 73.090169)">$30</text>
    </g>
    <g id="text_15">
-    <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; fill: #00204e" transform="translate(147.049615 93.560284)">GPT-4o</text>
+    <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; fill: #00204e" transform="translate(147.049615 92.8761)">GPT-4o</text>
     <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; fill: #00204e" transform="translate(147.049615 103.078424)">$15</text>
    </g>
    <g id="text_16">
-    <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; fill: #00204e" transform="translate(218.945769 111.102289)">GPT-5</text>
+    <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; fill: #00204e" transform="translate(218.945769 110.418105)">GPT-5</text>
     <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; fill: #00204e" transform="translate(218.945769 120.620429)">$10</text>
    </g>
    <g id="patch_5">
-    <path d="M 312.352356 52.019872 
-Q 291.427804 64.68161 270.503252 77.343349 
+    <path d="M 310.379598 53.08424 
+Q 290.440787 65.211524 270.501976 77.338807 
 " style="fill: none; stroke: #e65f00; stroke-width: 0.9; stroke-linecap: round"/>
    </g>
    <g id="text_17">
-    <text style="font-size: 8px; font-family: 'DejaVu Sans'; fill: #e65f00" transform="translate(279.146815 38.362976)">Jul 31, 2026 baseline</text>
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; fill: #e65f00" transform="translate(279.146815 37.719039)">Jul 31, 2026 baseline</text>
     <text style="font-size: 8px; font-family: 'DejaVu Sans'; fill: #e65f00" transform="translate(279.146815 47.321226)">GPT-5.6 Sol (top tier): $30</text>
    </g>
    <g id="text_18">
-    <text style="font-size: 8px; font-family: 'DejaVu Sans'; fill: #c0392b" transform="translate(367.051846 101.615287)">Forecast 2 threshold:</text>
-    <text style="font-size: 8px; font-family: 'DejaVu Sans'; fill: #c0392b" transform="translate(367.051846 110.573537)">−50% ($15) by</text>
-    <text style="font-size: 8px; font-family: 'DejaVu Sans'; fill: #c0392b" transform="translate(367.051846 119.531787)">Dec 31, 2027</text>
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; fill: #c0392b" transform="translate(367.051846 100.842599)">Forecast 2 threshold:</text>
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; fill: #c0392b" transform="translate(367.051846 110.444787)">−50% ($15) by</text>
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; fill: #c0392b" transform="translate(367.051846 120.046349)">Dec 31, 2027</text>
    </g>
    <g id="text_19">
     <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1a1d21" x="65.088" y="15.178359" transform="rotate(-0 65.088 15.178359)">OpenAI top-tier output list price: four launches, then the baseline</text>
    </g>
    <g id="PathCollection_1">
     <defs>
-     <path id="mf2c46b8fdb" d="M 0 3.162278 
+     <path id="m76f8f4d9b3" d="M 0 3.162278 
 C 0.838646 3.162278 1.643056 2.82908 2.236068 2.236068 
 C 2.82908 1.643056 3.162278 0.838646 3.162278 0 
 C 3.162278 -0.838646 2.82908 -1.643056 2.236068 -2.236068 
@@ -263,16 +263,16 @@ C -1.643056 2.82908 -0.838646 3.162278 0 3.162278
 z
 " style="stroke: #00204e"/>
     </defs>
-    <g clip-path="url(#pbfbc0b6967)">
-     <use xlink:href="#mf2c46b8fdb" x="77.070692" y="48.389525" style="fill: #00204e; stroke: #00204e"/>
-     <use xlink:href="#mf2c46b8fdb" x="115.415308" y="78.377781" style="fill: #00204e; stroke: #00204e"/>
-     <use xlink:href="#mf2c46b8fdb" x="144.173769" y="108.366037" style="fill: #00204e; stroke: #00204e"/>
-     <use xlink:href="#mf2c46b8fdb" x="216.069923" y="125.908042" style="fill: #00204e; stroke: #00204e"/>
+    <g clip-path="url(#p42fe898daf)">
+     <use xlink:href="#m76f8f4d9b3" x="77.070692" y="48.389525" style="fill: #00204e; stroke: #00204e"/>
+     <use xlink:href="#m76f8f4d9b3" x="115.415308" y="78.377781" style="fill: #00204e; stroke: #00204e"/>
+     <use xlink:href="#m76f8f4d9b3" x="144.173769" y="108.366037" style="fill: #00204e; stroke: #00204e"/>
+     <use xlink:href="#m76f8f4d9b3" x="216.069923" y="125.908042" style="fill: #00204e; stroke: #00204e"/>
     </g>
    </g>
    <g id="PathCollection_2">
     <defs>
-     <path id="m2e8fabd92c" d="M 0 3.605551 
+     <path id="m75c33f58f9" d="M 0 3.605551 
 C 0.956203 3.605551 1.873372 3.225648 2.54951 2.54951 
 C 3.225648 1.873372 3.605551 0.956203 3.605551 0 
 C 3.605551 -0.956203 3.225648 -1.873372 2.54951 -2.54951 
@@ -284,19 +284,19 @@ C -1.873372 3.225648 -0.956203 3.605551 0 3.605551
 z
 " style="stroke: #e65f00; stroke-width: 1.6"/>
     </defs>
-    <g clip-path="url(#pbfbc0b6967)">
-     <use xlink:href="#m2e8fabd92c" x="268.793769" y="78.377781" style="fill: #ffffff; stroke: #e65f00; stroke-width: 1.6"/>
+    <g clip-path="url(#p42fe898daf)">
+     <use xlink:href="#m75c33f58f9" x="268.793769" y="78.377781" style="fill: #ffffff; stroke: #e65f00; stroke-width: 1.6"/>
     </g>
    </g>
   </g>
   <g id="text_20">
-   <text style="font-size: 8px; font-family: 'DejaVu Sans'; fill: #707b7c" transform="translate(7.2 201.005109)">Source: OpenAI published on-demand API list prices for the pricing page's top general-purpose tier; one provider, shown as the</text>
-   <text style="font-size: 8px; font-family: 'DejaVu Sans'; fill: #707b7c" transform="translate(7.2 209.963359)">reference class; no quality adjustment. The hollow marker is the July 31, 2026 baseline the forecast resolves against, drawn as an</text>
-   <text style="font-size: 8px; font-family: 'DejaVu Sans'; fill: #707b7c" transform="translate(7.2 218.921609)">estimate because direct pricing-page capture was blocked in this build (data/fig05_tokens.csv; see data/snapshots/README.md).</text>
+   <text style="font-size: 8px; font-family: 'DejaVu Sans'; fill: #707b7c" transform="translate(7.2 201.805891)">Source: OpenAI published on-demand API list prices for the pricing page's top general-purpose tier; one provider, shown as the</text>
+   <text style="font-size: 8px; font-family: 'DejaVu Sans'; fill: #707b7c" transform="translate(7.2 211.408078)">reference class; no quality adjustment. The hollow marker is the July 31, 2026 baseline the forecast resolves against, drawn as an</text>
+   <text style="font-size: 8px; font-family: 'DejaVu Sans'; fill: #707b7c" transform="translate(7.2 221.010266)">estimate because direct pricing-page capture was blocked in this build (data/fig05_tokens.csv; see data/snapshots/README.md).</text>
   </g>
  </g>
  <defs>
-  <clipPath id="pbfbc0b6967">
+  <clipPath id="p42fe898daf">
    <rect x="65.088" y="24.178359" width="373.86" height="141.372"/>
   </clipPath>
  </defs>

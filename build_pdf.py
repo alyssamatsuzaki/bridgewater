@@ -1,8 +1,14 @@
 """One-command build for the submission PDF.
 
-    python build_pdf.py            # regenerates all figures from data/, then builds the PDF
+    python build_pdf.py              # figures from data/, PDF, attachment, QA renders
     python build_pdf.py --skip-figures
-    python build_pdf.py --no-qa    # skip rendering qa/page_NN.png
+    python build_pdf.py --no-qa      # skip rendering qa/page_NN.png
+    python build_pdf.py --no-attach  # skip embedding the project archive
+
+The finished PDF carries a zip of this project as an embedded file attachment, so
+every number in the paper can be traced without a network round-trip. Embedding
+runs on every build and replaces any prior copy, so the attachment cannot drift
+from the manuscript it ships with.
 
 Everything is project-relative; the build is offline and deterministic. The
 figure step fails loudly if the bundled fonts in fonts/ are missing.
@@ -197,10 +203,97 @@ def render_qa_pages():
     return len(doc)
 
 
+# Everything the reviewer needs to re-derive the submission, minus the page
+# renders (they duplicate the PDF the attachment is inside) and build detritus.
+ATTACH_NAME = "control-without-feedback-repo.zip"
+ATTACH_EXCLUDE = (".git", "__pycache__", ".pytest_cache")
+# review_final.md is our own adversarial QA pass — a referee report we wrote
+# to drive fixes, not a provenance record. It stays in the project and out of
+# the judge-facing attachment. Delete this tuple entry to include it.
+ATTACH_EXCLUDE_FILES = ("review_final.md",)
+ATTACH_NOTE = """\
+# Attached project repository
+
+This archive is attached to the submission PDF so every number in the paper can
+be traced without a network round-trip.
+
+    submission.md            manuscript source
+    figures.py               figure generation; every value read from data/
+    build_pdf.py             one-command build (python3 build_pdf.py)
+    requirements.txt         pinned versions the submitted PDF was built with
+    fonts/                   bundled TTFs; the build fails rather than substitute
+    data/                    per-figure input CSVs
+    data/figure_sources.csv  provenance ledger: source, vintage, URL, access
+                             date, transformation, verification status per point
+    data/snapshots/          forecast 2 pricing baselines and capture procedure
+    verification/            per-claim source findings, including failures
+    figs/                    final figures, SVG and 300-dpi PNG
+    archive/                 the pre-revision draft and everything cut, with reasons
+    CHANGELOG.md             what changed and why; section 8 lists what is still
+                             unverified and how to close each gap
+    calibration.md           probability derivations, including one worked end to end
+    figure_audit.md, plan.md  the pre-revision audit and revision plan
+    qa/mechanical_checks.md  figure text-size and URL checks
+
+Two items are omitted deliberately and remain in the project directory itself.
+The `qa/page_NN.png` files are renders of the PDF this archive is attached to.
+`review_final.md` is an adversarial review we commissioned of our own draft to
+drive the corrections listed in `CHANGELOG.md`; every substantive finding it
+produced is either fixed in the manuscript or recorded as outstanding in
+CHANGELOG section 8.
+
+Rebuild with `pip install -r requirements.txt && python3 build_pdf.py`. The build
+is offline and deterministic.
+"""
+
+
+def attach_repository():
+    """Embed a zip of the project into the built PDF as a file attachment."""
+    import io
+    import os
+    import zipfile
+    import fitz
+
+    buf = io.BytesIO()
+    with zipfile.ZipFile(buf, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as z:
+        z.writestr("ATTACHMENT_NOTE.md", ATTACH_NOTE)
+        for path in sorted(ROOT.rglob("*")):
+            if not path.is_file():
+                continue
+            rel = path.relative_to(ROOT)
+            if rel.parts[0] in ATTACH_EXCLUDE:
+                continue
+            if rel.parts[0] == "qa" and rel.name.startswith("page_"):
+                continue
+            if path.name in (OUT.name, ATTACH_NAME):
+                continue
+            if rel.as_posix() in ATTACH_EXCLUDE_FILES:
+                continue
+            z.write(path, rel.as_posix())
+    payload = buf.getvalue()
+
+    doc = fitz.open(OUT)
+    for i in range(doc.embfile_count() - 1, -1, -1):
+        doc.embfile_del(i)                      # idempotent across rebuilds
+    doc.embfile_add(
+        ATTACH_NAME, payload, filename=ATTACH_NAME,
+        ufilename=ATTACH_NAME,
+        desc="Project repository: manuscript source, figure code, input data, "
+             "provenance ledger, verification records, and archived cut material.",
+    )
+    tmp = OUT.with_suffix(".tmp.pdf")
+    doc.save(str(tmp), garbage=3, deflate=True)
+    doc.close()
+    os.replace(tmp, OUT)
+    return len(payload)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--skip-figures", action="store_true")
     ap.add_argument("--no-qa", action="store_true")
+    ap.add_argument("--no-attach", action="store_true",
+                    help="skip embedding the project repository in the PDF")
     args = ap.parse_args()
 
     leftover = [ln for ln in SRC.read_text(encoding="utf-8").splitlines()
@@ -222,11 +315,19 @@ def main():
     doc.addPageTemplates([PageTemplate(id="p", frames=[frame], onPage=on_page)])
     doc.build(build_story())
 
+    attached = 0
+    if not args.no_attach:
+        attached = attach_repository()
+
     npages = "?"
     if not args.no_qa:
         npages = render_qa_pages()
-    print(f"built {OUT.name}: {npages} pages" +
-          ("" if args.no_qa else f"; page renders in {QA}/"))
+    msg = f"built {OUT.name}: {npages} pages"
+    if attached:
+        msg += f"; repository attached ({attached / 1e6:.1f} MB, {ATTACH_NAME})"
+    if not args.no_qa:
+        msg += f"; page renders in {QA}/"
+    print(msg)
 
 
 if __name__ == "__main__":

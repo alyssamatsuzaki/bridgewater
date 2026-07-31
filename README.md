@@ -47,14 +47,36 @@ python3 build_pdf.py
 ```
 
 This regenerates the five figures from `data/`, builds `FTF2026_submission.pdf`
-from `submission.md`, and renders `qa/page_01.png` … `qa/page_10.png` from the
-finished PDF for visual proofreading.
+from `submission.md`, embeds a zip of this project into the PDF as a file
+attachment, and renders `qa/page_01.png` … `qa/page_10.png` from the finished PDF
+for visual proofreading.
 
-Two flags:
+Three flags:
 
 - `--skip-figures` — build the PDF from the figures already in `figs/` instead of
   regenerating them first.
 - `--no-qa` — skip rendering the `qa/page_NN.png` pages after the PDF is built.
+- `--no-attach` — skip embedding the project archive.
+
+### The embedded project archive
+
+The submitted PDF carries this project inside it as an attachment named
+`control-without-feedback-repo.zip` (~3.4 MB), so a reader can trace any number
+without a network round-trip. Embedding happens on every build and replaces any
+previous copy, so the attachment cannot drift from the manuscript it ships with.
+Extract it from the attachments pane of most desktop PDF readers, or with:
+
+```
+python3 -c "import fitz; d=fitz.open('FTF2026_submission.pdf'); \
+open('repo.zip','wb').write(d.embfile_get(0))"
+```
+
+Two things are held back and listed as omitted in the archive's own
+`ATTACHMENT_NOTE.md`: the `qa/page_NN.png` renders, which duplicate the PDF the
+archive is attached to, and `review_final.md`, the adversarial review commissioned
+of our own draft to drive corrections. Both remain in the project directory. The
+exclusion lists are `ATTACH_EXCLUDE` and `ATTACH_EXCLUDE_FILES` in
+`build_pdf.py`; empty them to ship everything.
 
 The build refuses to run if any unresolved `{{PENDING:...}}` marker remains in
 `submission.md` — it exits with an error naming how many were found instead of

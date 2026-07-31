@@ -44,7 +44,7 @@ Passages cut from surviving sections, with reasons. The complete original text i
 
 **Removed:** title "Forecasting the Future 2026: Submission" (a filename, not a title) and the eighteen-way epigraph phrasing.
 
-**Reason:** replaced by *Control Without Feedback: Forecasts on AI and Modern Mercantilism* per ruling; the pricing conceit survives as the Part 1 header.
+**Reason:** replaced by *Forecasts on AI and Modern Mercantilism* per ruling; the pricing conceit survives as the Part 1 header.
 
 ## 8. USD/JPY, sector-return, Fed-funds, and LA Metro material in Part 2/Part 3
 

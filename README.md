@@ -1,9 +1,9 @@
-# Control Without Feedback — Forecasting the Future 2026
+# Forecasts on AI and Modern Mercantilism — Forecasting the Future 2026
 
 ## 1. What this is
 
 This repository is a submission to the "Forecasting the Future 2026" competition: a
-manuscript, "Control Without Feedback: Forecasts on AI and Modern Mercantilism"
+manuscript, "Forecasts on AI and Modern Mercantilism"
 (`submission.md`), together with the code and data used to build it. The submission
 targets a 10-page limit. The built PDF is `FTF2026_submission.pdf`, produced by
 `build_pdf.py` from `submission.md` and the figures in `figs/`.
@@ -61,7 +61,7 @@ Three flags:
 ### The embedded project archive
 
 The submitted PDF carries this project inside it as an attachment named
-`control-without-feedback-repo.zip` (~3.4 MB), so a reader can trace any number
+`ftf2026-repo.zip` (~3.4 MB), so a reader can trace any number
 without a network round-trip. Embedding happens on every build and replaces any
 previous copy, so the attachment cannot drift from the manuscript it ships with.
 Extract it from the attachments pane of most desktop PDF readers, or with:

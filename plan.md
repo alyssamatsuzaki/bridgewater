@@ -27,7 +27,7 @@ Cut forecasts go to `archive/forecasts_cut.md` in full, each with the justificat
 - Part 1 becomes 14 genuinely one-sentence forecasts, probability leading, on the model sentence provided. Resolution mechanics, fallbacks, edge cases, and vintage conventions move to a compact appendix table (one row per forecast: source of record, print convention, threshold/tie rule, fallback, resolution date).
 - Figure 1 (portfolio map) deleted; the Part 1 table replaces it.
 - Page-18 verification note deleted; its underlying verification performed in Phase 2 instead (each item becomes a row in the verification log).
-- Title: adopt **Control Without Feedback: Forecasts on AI and Modern Mercantilism**. I don't think I beat it; two alternates in Q3 only in case you want a choice.
+- Title: **Forecasts on AI and Modern Mercantilism** (see Q3; a longer thesis-prefixed variant was considered and dropped).
 - Repository-ready throughout; nothing published. No GitHub repo is created.
 - Epigraph/abstract retained but rewritten for 14 forecasts and stripped of the taxonomy.
 
@@ -81,7 +81,7 @@ Prose targets: Part 1 ≈ 850 words (from 3,018), Part 2 ≈ 1,100 (from 1,987),
 
 **Q2 — Renumbering.** Renumber the surviving 14 as 1–14 (my recommendation, mapping preserved in CHANGELOG), or keep original numbers with visible gaps as a trace of the cuts?
 
-**Q3 — Title.** Adopting *Control Without Feedback: Forecasts on AI and Modern Mercantilism* per the ruling. Alternates only if you want them: *The Price of Control: Fourteen Forecasts on Mercantilism and AI*; *Sensing Without Correcting: Forecasts for the Managed Decade*. Default is your title unless you pick an alternate.
+**Q3 — Title.** Adopting *Forecasts on AI and Modern Mercantilism*; a thesis-phrase prefix was considered and dropped. Alternates only if you want them: *The Price of Control: Fourteen Forecasts on Mercantilism and AI*; *Sensing Without Correcting: Forecasts for the Managed Decade*. Default is your title unless you pick an alternate.
 
 **Q4 — Forecast 8's criterion (meaning-level change, yours to approve).** The event is public disclosure, not cancellation. Options: (a) keep the criterion, retitle the forecast to "will publicly disclose…" (it already reads this way) and state the two-stage probability in the derivation — P(cancellation-scale gap) × P(disclosure | gap) — leaving 65% attached to the disclosure event; or (b) rewrite the criterion toward cancellation itself, which weakens resolvability. I recommend (a); the derivation change lands only with your sign-off.
 

@@ -186,7 +186,7 @@ def on_page(canv, doc):
     canv.setFont("Helvetica", 7.5)
     canv.setFillColor(GRAY)
     canv.drawString(ML, 0.45 * inch,
-                    "Control Without Feedback | Forecasting the Future 2026")
+                    "Forecasting the Future 2026")
     canv.drawRightString(W - MR, 0.45 * inch, f"{doc.page}")
     canv.restoreState()
 
@@ -205,7 +205,7 @@ def render_qa_pages():
 
 # Everything the reviewer needs to re-derive the submission, minus the page
 # renders (they duplicate the PDF the attachment is inside) and build detritus.
-ATTACH_NAME = "control-without-feedback-repo.zip"
+ATTACH_NAME = "ftf2026-repo.zip"
 ATTACH_EXCLUDE = (".git", "__pycache__", ".pytest_cache")
 # review_final.md is our own adversarial QA pass — a referee report we wrote
 # to drive fixes, not a provenance record. It stays in the project and out of
@@ -309,8 +309,7 @@ def main():
 
     doc = BaseDocTemplate(str(OUT), pagesize=letter, leftMargin=ML,
                           rightMargin=MR, topMargin=MT, bottomMargin=MB,
-                          title="Control Without Feedback: Forecasts on AI and "
-                                "Modern Mercantilism")
+                          title="Forecasts on AI and Modern Mercantilism")
     frame = Frame(ML, MB, TEXTW, H - MT - MB, id="f")
     doc.addPageTemplates([PageTemplate(id="p", frames=[frame], onPage=on_page)])
     doc.build(build_story())

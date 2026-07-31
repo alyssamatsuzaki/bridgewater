@@ -1,4 +1,4 @@
-"""Figures for "Control Without Feedback: Forecasts on AI and Modern Mercantilism".
+"""Figures for "Forecasts on AI and Modern Mercantilism".
 
 Every plotted value is read from a CSV under data/ and traces to a row in
 data/figure_sources.csv (source, vintage, URL, access date). Estimates are

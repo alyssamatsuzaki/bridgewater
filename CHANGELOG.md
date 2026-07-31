@@ -88,7 +88,7 @@ Specific figure fixes: NEV chart retitled factually and put on one consistent CP
 - Part 1 is one sentence per forecast, probability leading; resolution mechanics moved to Table 2.
 - Sentences over roughly 40 words broken throughout.
 - Falsification block kept nearly intact, as ruled.
-- Title: *Control Without Feedback: Forecasts on AI and Modern Mercantilism*.
+- Title: *Forecasts on AI and Modern Mercantilism*. An earlier working title prefixed this with a thesis phrase; that prefix was dropped, leaving the subject line to stand alone. The thesis itself is unchanged and still carries both competition themes in the epigraph.
 
 ## 8. Claims that remain unresolved — read this before submitting
 

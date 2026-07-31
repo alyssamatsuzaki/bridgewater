@@ -1,4 +1,4 @@
-# Hostile Referee Report — *Control Without Feedback: Forecasts on AI and Modern Mercantilism*
+# Hostile Referee Report — *Forecasts on AI and Modern Mercantilism*
 
 **Reviewed state.** `submission.md` md5 `a31f8698f9abd36eae53c75a7f80590d` (mtime 2026-07-31 07:18:26), `FTF2026_submission.pdf` (10 pages, built 07:15:54), `qa/page_01–10.png` as of 07:17:43. Line numbers below refer to that `submission.md`; page numbers to that PDF.
 

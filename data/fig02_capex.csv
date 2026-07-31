@@ -1,0 +1,9 @@
+year,value_usd_b,kind,status
+2019,70,actual,carried_unverified
+2020,96,actual,carried_unverified
+2021,127,actual,carried_unverified
+2022,152,actual,carried_unverified
+2023,148,actual,carried_unverified
+2024,230,actual,search_confirmed
+2025,410,actual,search_confirmed
+2026,700,guidance,estimate

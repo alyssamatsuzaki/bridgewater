@@ -5,7 +5,7 @@
 This repository is a submission to the "Forecasting the Future 2026" competition: a
 manuscript, "Forecasts on AI and Modern Mercantilism"
 (`submission.md`), together with the code and data used to build it. The submission
-targets a 10-page limit. The built PDF is `FTF2026_submission.pdf`, produced by
+targets a 15-page limit. The built PDF is `FTF2026_submission.pdf`, produced by
 `build_pdf.py` from `submission.md` and the figures in `figs/`.
 
 ## 2. Repository layout
@@ -21,7 +21,7 @@ targets a 10-page limit. The built PDF is `FTF2026_submission.pdf`, produced by
 | `data/` | Per-figure input CSVs, the `figure_sources.csv` provenance ledger, and `snapshots/` (pricing-page baselines). |
 | `figs/` | Generated figure output (SVG + 300-dpi PNG); overwritten each time `figures.py` runs. |
 | `fonts/` | Bundled DejaVu Sans TTFs that `figures.py` requires for figure text; the build fails if they are missing rather than substituting a system font. |
-| `qa/` | PNG renders of each built PDF page (`page_01.png` … `page_10.png`), for visual proofreading; overwritten by `build_pdf.py` unless `--no-qa` is passed. |
+| `qa/` | PNG renders of each built PDF page (`page_01.png` … `page_NN.png`, one per built page), for visual proofreading; overwritten by `build_pdf.py` unless `--no-qa` is passed. |
 | `verification/` | Per-topic source-verification notes (`V01`–`V10`) documenting how factual claims in the manuscript were checked and what each source does and does not establish. |
 | `archive/` | Material cut from the prior 18-page draft, kept for the record rather than deleted; see `archive/README.md`. |
 | `plan.md` | The revision plan that cut the draft from 18 pages/18 forecasts to 10 pages/14 forecasts (forecast cut list, page allocation, rationale). |
@@ -48,7 +48,7 @@ python3 build_pdf.py
 
 This regenerates the five figures from `data/`, builds `FTF2026_submission.pdf`
 from `submission.md`, embeds a zip of this project into the PDF as a file
-attachment, and renders `qa/page_01.png` … `qa/page_10.png` from the finished PDF
+attachment, and renders `qa/page_01.png` … `qa/page_NN.png` from the finished PDF
 for visual proofreading.
 
 Three flags:

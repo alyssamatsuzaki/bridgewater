@@ -1,4 +1,6 @@
-# Forecasts cut in the July 2026 revision (18 → 14)
+# Forecasts cut in the July 2026 revision (18 → 14), two later restored
+
+**Update, after the page limit rose to 15.** Originals 3 (LA Metro / LA28) and 14 (USD/JPY) were **restored** as forecasts 16 and 17 when the limit moved to 15 pages and the six-relationship synthesis gave each a named mechanism. Original 14's mechanism-blindness was not repaired; it is restated as a limitation in the manuscript. Originals 16 (federal funds rate) and 18 (sector returns) remain cut. See `CHANGELOG.md` section 8b.
 
 Cut per editor ruling: original 14 was flagged by all four reviewers; originals 3, 16, and 18 were the three ruled candidates, cut for depending on the longest chains of intermediate steps to reach modern mercantilism or AI. Original numbering throughout this file.
 

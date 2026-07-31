@@ -8,13 +8,13 @@ From an 18-page, 18-forecast, 10-figure draft to a 10-page, 14-forecast, 5-figur
 
 | | Before | After |
 |---|---|---|
-| Pages | 18 | **10** |
-| Forecasts | 18 | **14** |
+| Pages | 18 | **13** (limit 15) |
+| Forecasts | 18 | **17** |
 | Figures | 10 | **5** |
-| Words | 8,010 | ~5,960 |
+| Words | 8,010 | ~7,400 |
 | Part 3 begins | page 12 | page 4 |
 
-Page allocation: forecasts on 1–2, framework on 2–4, appendix on 4–9, sources/method/self-audit on 10.
+Page allocation: forecasts on 1–2, framework on 2–6, appendix on 6–12, sources/method/self-audit on 12–13.
 
 Renumbering (old → new): 1→1, 2→2, 4→3, 5→4, 6→5, 7→6, 8→7, 9→8, 10→9, 11→10, 12→11, 13→12, 15→13, 17→14. Editing was done under original numbers and renumbered once at the end, with a scripted sweep over prose, both tables, figure captions, in-figure labels, and the sources block; every changed line was reviewed against a diff.
 
@@ -103,7 +103,37 @@ Verification ran against a hard environmental limit: **every direct fetch of a p
 7. **Thailand Chinese-brand share.** Verified in a 70–85% range, not at a clean three-quarters; the manuscript now says "most of them Chinese brands."
 8. **Japan EV share.** Denominator-sensitive (1.3–2% BEV-only, ~2.7% BEV+PHEV); the manuscript now says "below 3% even counting plug-in hybrids."
 9. **May 2026 net customs collections turning negative.** Asserted in Part 3 and in forecast 14's derivation as the named failure mode. Carried from the prior draft; the follow-up verification pass that would have checked the monthly MTS could not run (search allowance exhausted, Treasury fetch blocked). The mechanism — tariff-refund litigation — is well attested; the specific claim that one month's *net* collections went negative is not confirmed. If it cannot be confirmed before submission, soften to "a refund wave sharply reduced spring 2026 collections."
+11. **Forecast 17's structural setup.** The level of USD/JPY against its multi-decade range and the Bank of Japan's tightening path are carried from the prior draft and were not re-verified. The manuscript states this inside the derivation, and the 30% rests on the August 2024 reference event and the funding-channel argument rather than on a current rate reading.
+12. **Forecast 16's project list.** That a March 2024 LA Metro board action replaced eleven projects, and the composition of the revised 28, are carried from the prior draft. The list governs resolution, so it should be confirmed against the board report before submission.
+13. **Forecast 15's adoption figure.** NVIDIA's roughly two million cumulative Cosmos downloads is a vendor claim, cited as such in the manuscript, and is not independently confirmed.
 10. **Japan self-checkout, 77.1% of supermarkets.** Cited to the Japan Supermarket Association's annual survey and carried from the prior draft. Not independently re-verified this pass; it was not among the six flagged leads and no brief covered it. Low stakes — it supports an illustrative claim in Part 2 §4, not a forecast — but it is unverified and should be checked or attributed more loosely.
+
+## 8b. Second revision: page limit raised to 15, three forecasts added
+
+The page limit moved from 10 to 15, and three subjects were requested: the Japanese yen, LA28, and world models. Two of the three had been cut earlier in this same revision, so this reverses those cuts deliberately rather than by oversight.
+
+**Framework.** Part 2 gains a synthesis section stating the general mechanism: societies as nested feedback systems, where local conditions shape perception, perception feeds prediction, prediction drives action, and the resulting feedback becomes either learning or accumulated error that eventually forces structural change. Six recurring relationships are stated as a table, each with the forecasts that price it and the observation that would falsify it. The five existing mercantilism-and-AI claims are now framed as the domain application of that chain.
+
+Two disciplines were applied to the synthesis so it adds testability rather than unfalsifiable scope:
+
+- **The phase-transition claim is not forecast.** "Symmetry breaking" has no resolution criterion writable for a three-year window, so the paper says so and forecasts the accumulating mismatches that would precede one instead, naming forecasts 8, 13, and 17 as the joint signature to watch.
+- **The thinnest relationship is disclosed.** Inequality feeding back into political power enters only through workflow-data ownership and employment law. No forecast prices wealth concentration, campaign finance, or regulatory capture. The manuscript states this as a real gap between the framework's breadth and the evidence at risk.
+
+**Forecasts added.**
+
+| # | Forecast | Prob. | Why it earns a slot now |
+|---|---|---|---|
+| 15 | A Fortune 500 non-technology company discloses using world-model synthetic data to train robots in its own facilities, before end-2028 | 40% | World models industrialize the prediction stage of the loop. Framework claim 4 predicts an asymmetry: fidelity gets cheap fast while interaction data and physical position stay scarce, so deployment lags capability. Grounded in the 2026 state of the art (DeepMind Genie 3; NVIDIA Cosmos 3, June 22, 2026). |
+| 16 | Fewer than 20 of LA Metro's 28 projects open by the LA28 opening date, July 14, 2028 | 70% | Restores original forecast 3, cut for reaching the thesis "only by analogy." The general form of the loop is what brings it back: relationship 4 is about policy delay as such, not about datacenters. It also tests the delivery claim outside the AI buildout, where forecasts 7, 8, and 11 all share one industry. |
+| 17 | USD/JPY moves ≥10% peak-to-trough in a 20-session window between Aug 3, 2026 and Dec 31, 2027 | 30% | Restores original forecast 14, cut as "mechanism-blind." The limitation is **restated rather than repaired**: the criterion still resolves YES on a generic carry unwind, so it establishes co-movement, not attribution, exactly as forecast 13 does. What changed is that relationship 2 gives fragility a named mechanism the earlier draft lacked. |
+
+Probabilities are carried from the original drafts (70% and 30%) rather than re-derived, because the environment could not re-read the underlying series. Forecast 15's 40% is new and derived in `calibration.md`.
+
+**Falsification logic corrected.** Low-probability forecasts cannot falsify by resolving NO, since NO is what we already expect. The manuscript now says so explicitly: forecast 17's informative direction is YES, as is forecast 15's, and only forecasts priced above even odds carry falsifying power in the NO direction. Forecast 16 at 70% is added to the falsification block on that basis.
+
+**Correlation recounted.** Seventeen forecasts, roughly nine independent tests. Forecast 16 improves the ratio because a transit program on a fixed deadline shares almost no driver with the AI buildout.
+
+**Attribution note.** The six-relationship synthesis is written in the paper's own voice. It was supplied to us as a named third party's cross-domain argument, but no citable published source under that name could be located, and a submission that stakes its credibility on provenance discipline cannot carry an attribution a judge is unable to check. If the source is citable, or is the author, the framing should be revisited before submission.
 
 ## 9. Reproducibility
 

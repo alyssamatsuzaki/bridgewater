@@ -1,6 +1,6 @@
 # Calibration
 
-Reasoning behind the probabilities that changed in this revision, the reference classes behind them, and one derivation worked start to finish. Numbering is **final** (1–14); the original draft number appears in parentheses where it differs.
+Reasoning behind the probabilities that changed in this revision, the reference classes behind them, and one derivation worked start to finish. Numbering is **final** (1–17); the original draft number appears in parentheses where it differs. Forecasts 15 to 17 were added when the page limit rose to 15; 16 and 17 restore forecasts cut earlier in this same revision, and that reversal is recorded in `CHANGELOG.md` section 8b.
 
 A note on what the reference classes can and cannot bear. The environment used for this revision could not open primary documents directly — every outbound fetch to `bea.gov`, `sec.gov`, `federalreserve.gov`, `ifr.org`, provider pricing pages, and `web.archive.org` returned 403 through the proxy, and the search allowance was exhausted partway through. Where a base rate below rests on the historical record rather than on a table I could re-read this week, it says so. No count is presented as exhaustive when it was assembled by search, and `verification/` records what each source actually established.
 
@@ -121,6 +121,41 @@ Every historical bar and every comparison must use the forecast's own boundary: 
 3. The draft's orange dot plotting "forecast 9's contrarian branch" at a specific dollar level is deleted. A probability is not a data point.
 
 30% holds. It is a coherence-driven number: forecast 7 at 56% and forecast 11 at 30% both describe recognition of the same gap, and a 2028 capex contraction cannot sit near zero while those hold.
+
+---
+
+## Forecast 15 (world models) — **40%**, newly derived
+
+The framework does not predict that world models will disappoint. It predicts an asymmetry, and the forecast is written to catch the asymmetry rather than the capability.
+
+**What is already established (July 2026).** DeepMind's Genie 3 generates persistent interactive 3D environments in real time at 24 fps and ships to subscribers through Project Genie. NVIDIA's Cosmos 3, released June 22, 2026, is an omnimodal world model aimed at physical AI, with embodied reasoning, task planning, and action modeling spanning vehicles, robots, and egocentric human motion. Benchmark attention has moved from video realism toward closed-loop usefulness (WorldArena, World-in-World, RoboTrustBench). Capability and availability are therefore not the open question.
+
+**What the framework says.** Claim 4: as knowledge becomes codified, its price falls and value migrates to what stays scarce. A world model is an attempt to codify the physical world, so the codified layer should cheapen fast — as it has — while the scarce complements remain real interaction data and physical position. The binding constraint should therefore appear at deployment, not at model quality.
+
+**Why the criterion is disclosure by the end user.** Vendor adoption is already visible and proves little: NVIDIA reports roughly two million cumulative Cosmos downloads, which is a vendor claim about developers, not evidence of production robots. The decision-relevant event is an industrial operator outside technology putting a world model into its own robot training loop and saying so in a filing, transcript, or release. That is the same disclosure discipline as forecast 7, and for the same reason: it is checkable and it cannot be satisfied by press enthusiasm.
+
+**Derivation.**
+
+- **Base condition — does it happen at all?** Synthetic physics-aware training data is already standard practice among robotics and AV developers, and the large industrial adopters of warehouse robotics have both the capital and the volume to justify it. That the underlying activity occurs somewhere among the Fortune 500 non-technology set before end-2028: **0.75**.
+- **Does the operator disclose it?** Higher than forecast 9's equivalent term, for a specific reason: NVIDIA and its peers actively co-market named customer deployments, and an operator has no legal exposure in saying it trains robots on synthetic data. Contrast forecast 9, where disclosing workflow-data licensing invites employment and privacy scrutiny, which is why that stage sits low. But the disclosure must name the model class and the operator's own facilities, which corporate communications often blur into generic "AI" language: **0.55**.
+
+0.75 × 0.55 ≈ 0.41, printed as **40%**.
+
+**Sensitivity.** If the disclosure term were 0.70, the answer is 53%; if 0.40, it is 30%. The forecast is most fragile to how specifically firms describe their automation, which is a communications habit rather than a technical fact — a weakness worth naming.
+
+**What it cannot show.** Resolving YES does not establish that world models drove the automation, only that one was disclosed in the loop. Resolving NO is weak evidence, since 40% means we already expect NO more often than not. This forecast informs mainly in the YES direction.
+
+## Forecasts 16 and 17 — restored, probabilities carried
+
+Both were cut earlier in this revision and restored when the page limit rose to 15. Neither probability was re-derived, because the environment could not re-read the underlying series; carrying the original numbers is the honest option and is recorded as such.
+
+**Forecast 16 (LA28 delivery), 70%.** Original number retained. The reasoning that produced it: a fixed, unmovable date; a program that has already publicly conceded delivery risk by replacing eleven of its original projects in a March 2024 board action; and a threshold set below the program's own target rather than at it. The restoration rationale is framework-level, not evidential — relationship 4 concerns policy delay as such, so a transit program on a hard deadline is a legitimate test rather than an analogy, which is what the earlier cut had judged it to be. The project list governs resolution and is carried unverified; it should be confirmed against the board report before submission.
+
+**Forecast 17 (the yen), 30%.** Original number retained, built from the August 2024 carry unwind (roughly 12% peak-to-trough in five weeks) as the reference-class event, doubled against the unconditional base rate for a seventeen-month window on the argument that yen funding sits beneath a meaningful share of AI-buildout leverage.
+
+The reason this forecast was cut, and the reason restoring it is defensible, are the same fact stated twice. The criterion resolves YES on any carry unwind, including one with no mercantilism or AI anywhere in the chain. We did not repair that by adding conditions, because every conditioning clause we considered — requiring a coincident BoJ action, or an intervention, or a named funding stress — made the forecast either unresolvable or a different forecast. So the limitation is restated in the manuscript: forecast 17 establishes co-movement with the framework, not attribution to it. Forecast 13 carries the identical caveat and is treated the same way. What the synthesis adds is a mechanism the earlier draft could not name: relationship 2 predicts fragility from correlated positioning and leverage, and the yen is the cleanest instrument on which that fragility is priced.
+
+The structural conditions we would ordinarily cite — where USD/JPY sits against its multi-decade range, and the Bank of Japan's tightening path — are carried from the prior draft and were not re-verified this pass. The 30% therefore rests on the reference event and the funding-channel argument alone.
 
 ---
 

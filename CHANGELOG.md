@@ -11,10 +11,10 @@ From an 18-page, 18-forecast, 10-figure draft to a 10-page, 14-forecast, 5-figur
 | Pages | 18 | **10** |
 | Forecasts | 18 | **14** |
 | Figures | 10 | **5** |
-| Words | 8,010 | ~4,900 |
+| Words | 8,010 | ~5,960 |
 | Part 3 begins | page 12 | page 4 |
 
-Page allocation: forecasts on 1–2, framework on 2–4, appendix on 5–9, sources/method/self-audit on 10.
+Page allocation: forecasts on 1–2, framework on 2–4, appendix on 4–9, sources/method/self-audit on 10.
 
 Renumbering (old → new): 1→1, 2→2, 4→3, 5→4, 6→5, 7→6, 8→7, 9→8, 10→9, 11→10, 12→11, 13→12, 15→13, 17→14. Editing was done under original numbers and renumbered once at the end, with a scripted sweep over prose, both tables, figure captions, in-figure labels, and the sources block; every changed line was reviewed against a diff.
 
@@ -45,6 +45,7 @@ Unchanged and re-checked: 1 (85%), 3 (65%), 4 (70%), 5 (68%), 8 (30%), 9 (30%), 
 - **Forecast 5 (was 6)** — fallback deleted. The draft substituted MIIT China installations over the last available IFR world total, changing source and denominator at once. Now: **unresolved** if the IFR discontinues the series. Also clarified that resolution follows the first published IFR figure for calendar-2027 installations, since the cited "World Robotics 2028" edition does not exist yet.
 - **Forecast 10 (was 11)** — Artificial Analysis fallback deleted; a different benchmark can reverse the outcome. Now **unresolved** if LMArena is discontinued.
 - **Forecast 7 (was 8)** — criterion kept as written (disclosure), with the two-stage structure stated explicitly in the derivation so the measured event is unambiguous.
+- **Forecast 2, wording only** — "on archived pricing pages" became "on dated pricing-page readings," because the archives the earlier phrasing implied do not exist in this build. What the forecast measures is unchanged, and Table 2 now records the OpenAI baseline reading ($30 output, GPT-5.6 Sol) so the comparison is fixed in the manuscript itself rather than depending on a capture that has not happened. Anthropic's and Google's baseline readings are in the data files and are weaker: **the Anthropic case needs a decision before submission**, because it ships both a top standard model and a separately branded premium tier, and the pre-registered rule turns on which one its pricing page designates as top.
 
 ## 5. Corrections forced by the evidence
 

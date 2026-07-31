@@ -8,7 +8,7 @@ Each probability starts from a reference class or market-implied prior, measures
 
 **1. 85% — More than 60.0% of the passenger vehicles China sells at retail in calendar 2027 are new-energy vehicles, resolving YES if the CPCA's first full-year 2027 print puts the NEV share of retail sales strictly above 60.0%.**
 
-**2. 80% — The published on-demand output-token price of the most capable generally available model from at least one of OpenAI, Anthropic, or Google ends 2027 at least 50% below that provider's July 31, 2026 level, on archived pricing pages under the pre-registered selection rule in Table 2.**
+**2. 80% — The published on-demand output-token price of the most capable generally available model from at least one of OpenAI, Anthropic, or Google ends 2027 at least 50% below that provider's July 31, 2026 level, on dated pricing-page readings under the pre-registered selection rule in Table 2.**
 
 **3. 65% — China's average gasoline demand for calendar 2027 prints below its calendar-2026 average in the first IEA Oil Market Report carrying a complete 2027 figure.**
 

@@ -3,4 +3,4 @@ date,model,output_usd_per_1m,kind,status
 2023-11,GPT-4 Turbo,30,list_price,search_confirmed
 2024-05,GPT-4o,15,list_price,search_confirmed
 2025-08,GPT-5,10,list_price,search_confirmed
-2026-07,baseline,10,snapshot,search_confirmed
+2026-07,GPT-5.6 Sol (top tier),30,snapshot,snapshot_secondary_only

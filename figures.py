@@ -270,35 +270,41 @@ def fig_tokens():
     base = [(tx(d), v, m) for d, m, v, k in pts if k == "snapshot"]
 
     fig, ax = plt.subplots(figsize=(W, 2.55))
-    xs = [x for x, _, _ in steps] + ([base[0][0]] if base else [])
-    ys = [v for _, v, _ in steps] + ([steps[-1][1]] if base else [])
-    ax.step(xs, ys, where="post", color=NAVY, lw=2.0, zorder=3)
-    ax.scatter([x for x, _, _ in steps], [v for _, v, _ in steps], s=40,
-               color=NAVY, zorder=4)
+    xs = [x for x, _, _ in steps]
+    ys = [v for _, v, _ in steps]
+    # step series ends at the last launch price; the baseline is a separate,
+    # separately dated observation and is not connected by a line.
+    ax.step(xs + [xs[-1] + 0.9], ys + [ys[-1]], where="post", color=NAVY, lw=2.0,
+            zorder=3)
+    ax.scatter(xs, ys, s=40, color=NAVY, zorder=4)
     for x, v, m in steps:
         ax.text(x + 0.05, v * 1.13, f"{m}\n${v:g}", fontsize=8.5, color=NAVY)
     if base:
-        bx, bv, _ = base[0]
-        ax.axvline(bx, color=SLATE, lw=0.9, ls=":")
-        ax.text(bx - 0.04, 3.6, "Jul 31, 2026 baseline\n(archived snapshot)",
-                fontsize=8.0, color=SLATE, ha="right")
-        ax.plot([bx, 2028.0], [bv / 2, bv / 2], color=RED, lw=1.3, ls="--", zorder=2)
-        ax.text(2028.04, bv / 2, f"Forecast 2 threshold:\n−50% (${bv/2:g}) by\nDec 31, 2027",
+        bx, bv, bm = base[0]
+        ax.scatter([bx], [bv], s=52, facecolors="white", edgecolors=ORANGE,
+                   lw=1.6, zorder=5)
+        ax.annotate(f"Jul 31, 2026 baseline\n{bm}: ${bv:g}",
+                    xy=(bx, bv), xytext=(bx + 0.18, bv * 2.05),
+                    fontsize=8.0, color=ORANGE, ha="left",
+                    arrowprops=dict(arrowstyle="-", color=ORANGE, lw=0.9))
+        ax.plot([bx, 2028.15], [bv / 2, bv / 2], color=RED, lw=1.3, ls="--", zorder=2)
+        ax.text(2028.25, bv / 2, f"Forecast 2 threshold:\n−50% (${bv/2:g}) by\nDec 31, 2027",
                 fontsize=8.0, color=RED, va="center")
     ax.set_yscale("log")
     ax.set_yticks([5, 10, 20, 40, 60])
     ax.set_yticklabels(["$5", "$10", "$20", "$40", "$60"])
     ax.yaxis.set_minor_formatter(mticker.NullFormatter())
     ax.yaxis.set_minor_locator(mticker.NullLocator())
-    ax.set_xlim(2023.0, 2029.1)
-    ax.set_ylim(3.2, 95)
+    ax.set_xlim(2023.0, 2029.5)
+    ax.set_ylim(4.0, 105)
     ax.set_xticks([2023, 2024, 2025, 2026, 2027, 2028])
     ax.set_ylabel("Output list price, $ per 1M tokens (log)")
     style_ax(ax)
-    ax.set_title("OpenAI flagship output list price at launch, 2023–2026", loc="left", pad=9)
-    src(fig, "Source: OpenAI published on-demand API list prices for the pricing page's top general-purpose tier, at model launch — one provider,\n"
-             "shown as the reference class; no quality adjustment. Forecast 2 resolves on any one of OpenAI, Anthropic, or Google against its own\n"
-             "archived July 31, 2026 baseline (data/fig05_tokens.csv; snapshots in data/snapshots/).",
+    ax.set_title("OpenAI top-tier output list price: four launches, then the baseline",
+                 loc="left", pad=9)
+    src(fig, "Source: OpenAI published on-demand API list prices for the pricing page's top general-purpose tier — one provider, shown as the\n"
+             "reference class; no quality adjustment. The hollow marker is the July 31, 2026 baseline the forecast resolves against, drawn as an\n"
+             "estimate because direct pricing-page capture was blocked in this build (data/fig05_tokens.csv; see data/snapshots/README.md).",
         y=-0.05)
     save(fig, "fig05_tokens")
 

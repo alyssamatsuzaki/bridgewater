@@ -26,7 +26,7 @@ targets a 10-page limit. The built PDF is `FTF2026_submission.pdf`, produced by
 | `archive/` | Material cut from the prior 18-page draft, kept for the record rather than deleted; see `archive/README.md`. |
 | `plan.md` | The revision plan that cut the draft from 18 pages/18 forecasts to 10 pages/14 forecasts (forecast cut list, page allocation, rationale). |
 | `figure_audit.md` | The audit of the original ten figures that decided which were kept as-is, replaced, or deleted. |
-| `__pycache__/` | Python's compiled-bytecode cache. Not part of the submission; safe to delete. |
+| `.gitignore` | Excludes Python bytecode and build temporaries. |
 
 ## 3. Environment setup
 

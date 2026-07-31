@@ -101,6 +101,8 @@ Verification ran against a hard environmental limit: **every direct fetch of a p
 6. **LMArena current state.** Could not be checked; forecast 10's 20% rests on the structural argument, not on today's leaderboard.
 7. **Thailand Chinese-brand share.** Verified in a 70–85% range, not at a clean three-quarters; the manuscript now says "most of them Chinese brands."
 8. **Japan EV share.** Denominator-sensitive (1.3–2% BEV-only, ~2.7% BEV+PHEV); the manuscript now says "below 3% even counting plug-in hybrids."
+9. **May 2026 net customs collections turning negative.** Asserted in Part 3 and in forecast 14's derivation as the named failure mode. Carried from the prior draft; the follow-up verification pass that would have checked the monthly MTS could not run (search allowance exhausted, Treasury fetch blocked). The mechanism — tariff-refund litigation — is well attested; the specific claim that one month's *net* collections went negative is not confirmed. If it cannot be confirmed before submission, soften to "a refund wave sharply reduced spring 2026 collections."
+10. **Japan self-checkout, 77.1% of supermarkets.** Cited to the Japan Supermarket Association's annual survey and carried from the prior draft. Not independently re-verified this pass; it was not among the six flagged leads and no brief covered it. Low stakes — it supports an illustrative claim in Part 2 §4, not a forecast — but it is unverified and should be checked or attributed more loosely.
 
 ## 9. Reproducibility
 

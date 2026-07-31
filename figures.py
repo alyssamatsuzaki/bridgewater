@@ -98,7 +98,7 @@ def rows(csv_name):
 
 
 # =====================================================================
-# Figure 1 — China NEV share of passenger-vehicle retail sales
+# Figure 1: China NEV share of passenger-vehicle retail sales
 # =====================================================================
 def fig_nev():
     data = rows("fig01_nev_share.csv")
@@ -136,7 +136,7 @@ def fig_nev():
 
 
 # =====================================================================
-# Figure 2 — hyperscaler purchases of property and equipment
+# Figure 2: hyperscaler purchases of property and equipment
 # =====================================================================
 def fig_capex():
     data = rows("fig02_capex.csv")
@@ -175,7 +175,7 @@ def fig_capex():
 
 
 # =====================================================================
-# Figure 3 — oil: displacement estimates and the Hormuz scale comparison
+# Figure 3: oil displacement estimates and the Hormuz scale comparison
 # =====================================================================
 def fig_oil():
     data = rows("fig03_oil.csv")
@@ -239,16 +239,16 @@ def fig_oil():
                  fontsize=9.5, pad=7)
 
     fig.subplots_adjust(wspace=0.62)
-    src(fig, "Sources: derivation — MPS fleet registrations and stated assumptions (Thread 1), BEV 0.38 + PHEV 0.07; Kpler displacement estimates,\n"
+    src(fig, "Sources: derivation from MPS fleet registrations and stated assumptions (Thread 1), BEV 0.38 + PHEV 0.07; Kpler displacement estimates,\n"
              "2026, gasoline 0.54 + diesel 0.50; IEA Oil Market Report monthly accounting, Mar–Apr 2026. Hatched bars are estimates. The three\n"
-             "right-hand quantities are different kinds of measure, shown together only for scale — refinery-run cuts and halted product exports,\n"
+             "right-hand quantities are different kinds of measure, shown together only for scale; refinery-run cuts and halted product exports,\n"
              "not the fleet, supplied most of the import swing.",
         y=-0.05)
     save(fig, "fig03_oil")
 
 
 # =====================================================================
-# Figure 5 — OpenAI flagship output list price (reference class for F2)
+# Figure 5: OpenAI flagship output list price (reference class for F2)
 # =====================================================================
 def fig_tokens():
     data = rows("fig05_tokens.csv")
@@ -295,7 +295,7 @@ def fig_tokens():
     style_ax(ax)
     ax.set_title("OpenAI top-tier output list price: four launches, then the baseline",
                  loc="left", pad=9)
-    src(fig, "Source: OpenAI published on-demand API list prices for the pricing page's top general-purpose tier — one provider, shown as the\n"
+    src(fig, "Source: OpenAI published on-demand API list prices for the pricing page's top general-purpose tier; one provider, shown as the\n"
              "reference class; no quality adjustment. The hollow marker is the July 31, 2026 baseline the forecast resolves against, drawn as an\n"
              "estimate because direct pricing-page capture was blocked in this build (data/fig05_tokens.csv; see data/snapshots/README.md).",
         y=-0.05)
@@ -303,7 +303,7 @@ def fig_tokens():
 
 
 # =====================================================================
-# Figure 4 — macro small-multiple: core PCE first prints; customs duties
+# Figure 4: macro small-multiple, core PCE first prints and customs duties
 # =====================================================================
 def fig_macro():
     pce = rows("fig04a_core_pce.csv")
@@ -311,7 +311,7 @@ def fig_macro():
     fig, (a1, a2) = plt.subplots(1, 2, figsize=(W, 2.5),
                                  gridspec_kw={"width_ratios": [1.15, 1]})
 
-    # Panel A — core PCE y/y first prints; missing months drawn as gaps
+    # Panel A: core PCE y/y first prints; missing months drawn as gaps
     xs, ys = [], []
     for i, r in enumerate(pce):
         xs.append(i)
@@ -350,7 +350,7 @@ def fig_macro():
     style_ax(a1)
     a1.set_title("Core PCE, monthly first prints", loc="left", fontsize=9.5, pad=7)
 
-    # Panel B — customs duties by fiscal year
+    # Panel B: customs duties by fiscal year
     for r in dut:
         fy, v, kind = int(r["fiscal_year"]), float(r["value_usd_b"]), r["kind"]
         if kind == "actual":
@@ -361,7 +361,7 @@ def fig_macro():
             a2.text(fy, v + 12, "FY26\nYTD", ha="center", fontsize=8.0, color=ORANGE)
     a2.axhline(250, color=RED, lw=1.2, ls="--")
     a2.text(int(dut[0]["fiscal_year"]) - 0.4, 224,
-            "$250B — forecast 14 threshold (FY2027)", fontsize=8.0, color=RED)
+            "$250B: forecast 14 threshold (FY2027)", fontsize=8.0, color=RED)
     last_actual = [r for r in dut if r["kind"] == "actual"][-1]
     a2.text(int(last_actual["fiscal_year"]), float(last_actual["value_usd_b"]) + 12,
             f"{float(last_actual['value_usd_b']):.0f}", ha="center", fontsize=8.5, color=INK)
@@ -372,9 +372,9 @@ def fig_macro():
     a2.set_title("Net customs duties by fiscal year", loc="left", fontsize=9.5, pad=7)
 
     fig.subplots_adjust(wspace=0.42)
-    src(fig, "Sources: BEA Personal Income and Outlays, monthly first prints, Jan 2025–Jun 2026 (October 2025 has no print — shutdown-delayed\n"
+    src(fig, "Sources: BEA Personal Income and Outlays, monthly first prints, Jan 2025–Jun 2026 (October 2025 has no print, shutdown-delayed\n"
              "reporting; drawn as a gap, not interpolated); US Treasury Monthly Treasury Statements, net customs duties by fiscal year, complete\n"
-             "fiscal years only — the partial FY2026 total is excluded rather than annualized. Rows, statuses, and URLs: data/fig04a–b CSVs.",
+             "fiscal years only; the partial FY2026 total is excluded rather than annualized. Rows, statuses, and URLs: data/fig04a–b CSVs.",
         y=-0.05)
     save(fig, "fig04_macro")
 

@@ -180,7 +180,7 @@ def on_page(canv, doc):
     canv.setFont("Helvetica", 7.5)
     canv.setFillColor(GRAY)
     canv.drawString(ML, 0.45 * inch,
-                    "Control Without Feedback — Forecasting the Future 2026")
+                    "Control Without Feedback | Forecasting the Future 2026")
     canv.drawRightString(W - MR, 0.45 * inch, f"{doc.page}")
     canv.restoreState()
 

@@ -100,7 +100,7 @@ def rows(csv_name):
 # =====================================================================
 # Figure 1 — China NEV share of passenger-vehicle retail sales
 # =====================================================================
-def fig01():
+def fig_nev():
     data = rows("fig01_nev_share.csv")
     annual = [(int(r["period"]), float(r["value"])) for r in data
               if r["series"] == "annual"]
@@ -138,7 +138,7 @@ def fig01():
 # =====================================================================
 # Figure 2 — hyperscaler purchases of property and equipment
 # =====================================================================
-def fig02():
+def fig_capex():
     data = rows("fig02_capex.csv")
     fig, ax = plt.subplots(figsize=(W, 2.7))
     handles = {}
@@ -182,7 +182,7 @@ def fig02():
 # =====================================================================
 # Figure 3 — oil: displacement estimates and the Hormuz scale comparison
 # =====================================================================
-def fig03():
+def fig_oil():
     data = rows("fig03_oil.csv")
     A = [r for r in data if r["panel"] == "A"]
     B = [r for r in data if r["panel"] == "B"]
@@ -255,10 +255,10 @@ def fig03():
 
 
 # =====================================================================
-# Figure 4 — OpenAI flagship output list price (reference class for F2)
+# Figure 5 — OpenAI flagship output list price (reference class for F2)
 # =====================================================================
-def fig04():
-    data = rows("fig04_tokens.csv")
+def fig_tokens():
+    data = rows("fig05_tokens.csv")
     pts = [(r["date"], r["model"], float(r["output_usd_per_1m"]), r["kind"])
            for r in data]
 
@@ -298,17 +298,17 @@ def fig04():
     ax.set_title("OpenAI flagship output list price at launch, 2023–2026", loc="left", pad=9)
     src(fig, "Source: OpenAI published on-demand API list prices for the pricing page's top general-purpose tier, at model launch — one provider,\n"
              "shown as the reference class; no quality adjustment. Forecast 2 resolves on any one of OpenAI, Anthropic, or Google against its own\n"
-             "archived July 31, 2026 baseline (data/fig04_tokens.csv; snapshots in data/snapshots/).",
+             "archived July 31, 2026 baseline (data/fig05_tokens.csv; snapshots in data/snapshots/).",
         y=-0.05)
-    save(fig, "fig04_tokens")
+    save(fig, "fig05_tokens")
 
 
 # =====================================================================
-# Figure 5 — macro small-multiple: core PCE first prints; customs duties
+# Figure 4 — macro small-multiple: core PCE first prints; customs duties
 # =====================================================================
-def fig05():
-    pce = rows("fig05a_core_pce.csv")
-    dut = rows("fig05b_customs_duties.csv")
+def fig_macro():
+    pce = rows("fig04a_core_pce.csv")
+    dut = rows("fig04b_customs_duties.csv")
     fig, (a1, a2) = plt.subplots(1, 2, figsize=(W, 2.5),
                                  gridspec_kw={"width_ratios": [1.15, 1]})
 
@@ -372,12 +372,13 @@ def fig05():
     fig.subplots_adjust(wspace=0.42)
     src(fig, "Sources: BEA Personal Income and Outlays, monthly first prints, Jan 2025–Jun 2026 (October 2025 has no print — shutdown-delayed\n"
              "reporting; drawn as a gap, not interpolated); US Treasury Monthly Treasury Statements, net customs duties by fiscal year, complete\n"
-             "fiscal years only — the partial FY2026 total is excluded rather than annualized. Rows, statuses, and URLs: data/fig05a–b CSVs.",
+             "fiscal years only — the partial FY2026 total is excluded rather than annualized. Rows, statuses, and URLs: data/fig04a–b CSVs.",
         y=-0.05)
-    save(fig, "fig05_macro")
+    save(fig, "fig04_macro")
 
 
-ALL = [fig01, fig02, fig03, fig04, fig05]
+# Order matches the figure numbering in submission.md.
+ALL = [fig_nev, fig_capex, fig_oil, fig_macro, fig_tokens]
 
 if __name__ == "__main__":
     for f in ALL:

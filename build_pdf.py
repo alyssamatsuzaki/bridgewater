@@ -206,7 +206,7 @@ def render_qa_pages():
 # Everything the reviewer needs to re-derive the submission, minus the page
 # renders (they duplicate the PDF the attachment is inside) and build detritus.
 ATTACH_NAME = "ftf2026-repo.zip"
-ATTACH_EXCLUDE = (".git", "__pycache__", ".pytest_cache")
+ATTACH_EXCLUDE = (".git", "__pycache__", ".pytest_cache", "graphify-out")
 # review_final.md is our own adversarial QA pass — a referee report we wrote
 # to drive fixes, not a provenance record. It stays in the project and out of
 # the judge-facing attachment. Delete this tuple entry to include it.

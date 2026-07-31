@@ -182,7 +182,7 @@ def fig_oil():
     A = [r for r in data if r["panel"] == "A"]
     B = [r for r in data if r["panel"] == "B"]
     fig, (a1, a2) = plt.subplots(1, 2, figsize=(W, 2.7),
-                                 gridspec_kw={"width_ratios": [1, 1.25]})
+                                 gridspec_kw={"width_ratios": [1, 1.18]})
 
     # Panel A: two independent estimates, both hatched (estimates)
     groups = {"derivation": [r for r in A if r["item"].startswith("derivation")],
@@ -196,16 +196,14 @@ def fig_oil():
             a1.bar([xpos[g]], [v], bottom=[bottom], color="white",
                    edgecolor=shades[g], hatch="///", lw=1.1, width=0.46, zorder=3)
             bottom += v
-        parts = " + ".join(f"{r['label'].split()[0]} {float(r['lo']):.2f}"
-                           for r in items)
-        a1.text(xpos[g], bottom + 0.16, f"≈{bottom:.2f}", ha="center",
+        # Totals only in-panel; the component split is stated in the source
+        # note, which keeps this narrow panel free of collidable text.
+        a1.text(xpos[g], bottom + 0.05, f"≈{bottom:.2f}", ha="center",
                 fontsize=9.5, fontweight="bold", color=INK)
-        a1.text(xpos[g], bottom + 0.05, parts, ha="center", fontsize=8.0,
-                color=shades[g])
     a1.set_xticks([0, 1])
     a1.set_xticklabels(["This paper\n(cars only)", "Kpler 2026\n(all segments)"],
-                       fontsize=8.5)
-    a1.set_xlim(-0.80, 1.90)
+                       fontsize=8.0)
+    a1.set_xlim(-0.62, 1.62)
     a1.set_ylim(0, 1.42)
     a1.set_ylabel("Structural displacement, mb/d (estimates)")
     style_ax(a1)
@@ -219,9 +217,7 @@ def fig_oil():
         y = len(B) - 1 - i
         kind = r["kind"]
         if kind == "observed_range":
-            a2.barh([y], [lo], color=SLATE, height=0.5, zorder=3)
-            a2.barh([y], [hi - lo], left=[lo], color="white", edgecolor=SLATE,
-                    hatch="///", lw=1.0, height=0.5, zorder=3)
+            a2.barh([y], [hi], color=SLATE, height=0.5, zorder=3)
             a2.text(hi + 0.25, y, f"{lo:g}–{hi:g}", va="center",
                     fontsize=8.5, color=INK)
         elif kind == "observed_approx":
@@ -235,16 +231,18 @@ def fig_oil():
         ypos.append(y)
     a2.set_yticks(ypos)
     a2.set_yticklabels(labels, fontsize=8.0)
+    a2.tick_params(axis="y", pad=1)
     a2.set_xlabel("Million barrels per day")
     a2.set_xlim(0, 16.5)
     style_ax(a2, grid_axis="x")
-    a2.set_title("March–May 2026: a scale comparison,\nnot a decomposition", loc="left",
+    a2.set_title("March–April 2026: a scale comparison,\nnot a decomposition", loc="left",
                  fontsize=9.5, pad=7)
 
-    fig.subplots_adjust(wspace=0.52)
-    src(fig, "Sources: derivation — MPS fleet registrations and stated assumptions (Thread 1); Kpler displacement estimates, 2026; IEA Oil Market\n"
-             "Report monthly accounting, Mar–May 2026. Hatched bars are estimates. The three right-hand quantities are different kinds of measure,\n"
-             "shown together only for scale; refinery-run cuts and halted product exports, not the fleet, supplied most of the import swing.",
+    fig.subplots_adjust(wspace=0.62)
+    src(fig, "Sources: derivation — MPS fleet registrations and stated assumptions (Thread 1), BEV 0.38 + PHEV 0.07; Kpler displacement estimates,\n"
+             "2026, gasoline 0.54 + diesel 0.50; IEA Oil Market Report monthly accounting, Mar–Apr 2026. Hatched bars are estimates. The three\n"
+             "right-hand quantities are different kinds of measure, shown together only for scale — refinery-run cuts and halted product exports,\n"
+             "not the fleet, supplied most of the import swing.",
         y=-0.05)
     save(fig, "fig03_oil")
 
@@ -341,9 +339,12 @@ def fig_macro():
                     xytext=(gap[0] - 0.3, 2.18), fontsize=8.0, color=SLATE,
                     ha="center", arrowprops=dict(arrowstyle="-", color=SLATE, lw=0.7))
     ticks = [i for i, r in enumerate(pce) if r["month"].endswith(("-01", "-07"))]
+    if ticks[-1] != len(pce) - 1:
+        ticks.append(len(pce) - 1)
     a1.set_xticks(ticks)
-    a1.set_xticklabels([{"01": "Jan", "07": "Jul"}[pce[i]["month"][-2:]] +
-                        " '" + pce[i]["month"][2:4] for i in ticks], fontsize=8.5)
+    MON = {"01": "Jan", "04": "Apr", "06": "Jun", "07": "Jul", "10": "Oct"}
+    a1.set_xticklabels([MON[pce[i]["month"][-2:]] + " '" + pce[i]["month"][2:4]
+                        for i in ticks], fontsize=8.0)
     a1.set_ylim(1.8, 3.8)
     a1.set_ylabel("Core PCE, % y/y (first prints)")
     style_ax(a1)

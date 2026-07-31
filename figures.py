@@ -126,7 +126,7 @@ def fig_nev():
                     arrowprops=dict(arrowstyle="-", color=SLATE, lw=0.9))
     ax.set_ylim(0, 80)
     ax.set_xticks(years)
-    ax.set_ylabel("NEV share of passenger-vehicle retail sales (%)")
+    ax.set_ylabel("NEV share of retail sales (%)")
     style_ax(ax)
     ax.set_title("China's NEV retail share, full-year CPCA prints", loc="left", pad=9)
     src(fig, "Source: China Passenger Car Association retail data (BEV+PHEV units ÷ total passenger-vehicle retail units), full-year first\n"
@@ -140,7 +140,7 @@ def fig_nev():
 # =====================================================================
 def fig_capex():
     data = rows("fig02_capex.csv")
-    fig, ax = plt.subplots(figsize=(W, 2.7))
+    fig, ax = plt.subplots(figsize=(W, 2.52))
     handles = {}
     for r in data:
         yr, v, kind = int(r["year"]), float(r["value_usd_b"]), r["kind"]
@@ -152,10 +152,8 @@ def fig_capex():
             b = ax.bar([yr], [v], color="white", edgecolor=ORANGE, hatch="///",
                        lw=1.2, width=0.62, zorder=3)
             handles["guidance"] = b
-            ax.text(yr, v + 16, f"≈{v:.0f}", ha="center", fontsize=8.5,
+            ax.text(yr, v + 14, f"≈{v:.0f} guidance", ha="center", fontsize=8.5,
                     color=ORANGE, fontweight="bold")
-            ax.text(yr, v - 60, "guidance", ha="center", fontsize=8.0,
-                    color=ORANGE)
         elif kind == "consensus":
             ax.scatter([yr], [v], s=44, facecolors="white", edgecolors=SLATE,
                        lw=1.4, zorder=3)
@@ -165,16 +163,13 @@ def fig_capex():
     ax.set_xticks(years)
     ax.set_xlim(years[0] - 0.6, years[-1] + 0.6)
     top = max(float(r["value_usd_b"]) for r in data)
-    ax.set_ylim(0, top * 1.24)
+    ax.set_ylim(0, top * 1.22)
     ax.set_ylabel("Combined capex, $B per calendar year")
     style_ax(ax)
     ax.set_title("Purchases of property and equipment: Microsoft, Alphabet, Amazon, Meta",
                  loc="left", pad=9)
-    ax.text(0.0, 1.005,
-            "Cash-flow “purchases of property and equipment,” finance leases excluded — forecast 8 resolves YES if the 2028 sum prints below 2027.",
-            transform=ax.transAxes, fontsize=8.0, color=SLATE, va="bottom")
-    src(fig, "Sources: company SEC cash-flow statements, calendar-quarter sums (navy = reported actuals); 2026 = company guidance re-based to the\n"
-             "same line where companies guide a different boundary (orange hatch = estimate). Per-company figures and URLs: data/fig02_capex.csv.",
+    src(fig, "Sources: company SEC cash-flow statements, calendar-quarter sums of “purchases of property and equipment,” finance leases excluded\n"
+             "(navy = reported actuals). The hatched 2026 bar is company guidance, on boundaries that differ between companies. data/fig02_capex.csv.",
         y=-0.04)
     save(fig, "fig02_capex")
 

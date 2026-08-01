@@ -135,6 +135,20 @@ Probabilities are carried from the original drafts (70% and 30%) rather than re-
 
 **Attribution note.** The six-relationship synthesis is written in the paper's own voice. It was supplied to us as a named third party's cross-domain argument, but no citable published source under that name could be located, and a submission that stakes its credibility on provenance discipline cannot carry an attribution a judge is unable to check. If the source is citable, or is the author, the framing should be revisited before submission.
 
+## 8c. Third revision: the human layer named as the first link in the chain
+
+The framework already ran a causal chain from conditions through perception, prediction, and action to policy and market feedback. What it asserted and then dropped was the first link: the psychology and behaviour that every stage passes through. Named mechanisms sat in the six-relationship table ("emotion, imitation, and optimistic expectations"; "hierarchy, fear, and propaganda") while claims 1 through 5 ran almost entirely on subsidies, grid capacity, employment law, depreciation schedules, and tariffs. No forecasts were added and no probability, resolution criterion, or entry in Table 2 changed. 13 pages to 14.
+
+**The private cost of correcting error, added after the six-relationship table.** A feedback loop closes only when a particular person acts on the signal, and acting early on an adverse signal is privately expensive: the executive who cancels announced capacity turns defensible optimism into a documented misjudgment, and the finance officer who shortens a depreciation life concedes in a filing that the prior estimate was wrong. The individual bears a concentrated cost so the institution captures a diffuse one. The information usually arrives on time; what arrives late is someone willing to be first to say so. This gives relationships 1, 4, and 6 a single shared mechanism and makes the lag itself the forecastable quantity, priced by forecasts 7, 11, and 16.
+
+**Forecast 7's two-stage split identified as that mechanism.** The 0.80 × 0.70 derivation already separated cancelling from disclosing. The appendix now says what the second factor is: cancelling is an operating decision a company can take quietly, while quantifying it is a statement about the judgment behind the original commitment. The withheld 0.30 is the probability that the retreat happens and nobody attaches a number to it, which the unquantified Microsoft lease cancellations demonstrate directly.
+
+**Automation-follows-scarcity promoted from a mid-paragraph aside to its own passage** in claim 4. The standard labor-cost account predicts the wrong geography; the installations run the other way, with China taking most of the world's industrial robots since 2021 at a fraction of US wages and with a shrinking working-age population. The argument now rests on that verified evidence (V07) rather than on the illustrative retail figures.
+
+**Japan self-checkout 77.1% attribution loosened**, closing item 10 of §8. That figure was carried from an earlier draft and never independently re-verified. Since the surrounding passage was being promoted to load-bearing, the precise number was replaced with "the large majority" and the text now states in-line that it is carried from earlier reporting and unverified in this revision. Leaving a precise unverified figure in a structural position would have contradicted the provenance discipline the paper argues for.
+
+**Claim 1's income inversion sharpened.** Thailand at 19.4% BEV share against a several-times-richer Japan below 3% was already stated. The paper now draws the conclusion: availability at a price point determines what people drive, availability is set upstream by trade and subsidy policy, and preference adjusts to what reaches the lot.
+
 ## 9. Reproducibility
 
 - All hard-coded absolute paths (`/home/claude/ftf/`, `/mnt/user-data/outputs/`) replaced with project-relative `pathlib` paths.

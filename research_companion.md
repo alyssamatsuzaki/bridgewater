@@ -32,7 +32,7 @@ The repository's ledger (`data/figure_sources.csv`) already carries a `status` c
 | Multi-source interpretation | Sources agree on the reading; the figure is derived or characterized rather than printed | `search_confirmed` with transformation noted |
 | Derived | Computed here from reported inputs, method stated | `triangulated` |
 | Projection | A named party's forward estimate, not an observation | `estimate` |
-| Inference | Reasoning by the authors from the above | marked in prose, never plotted as data |
+| Inference | Reasoning by the author from the above | marked in prose, never plotted as data |
 | Carried | From an earlier draft, not re-verified | `carried_unverified` |
 
 ---
@@ -151,7 +151,7 @@ The one forecast this sweep moved. The derivation belongs here rather than in th
 
 **The arithmetic, stated as a decomposition rather than a point estimate.** A $250B net print in FY2027 requires roughly: gross collections under successor authorities exceeding the IEEPA-era gross run rate, *minus* whatever refund tail remains. Input 4 makes the gross plausible in principle; a $949B base at 12.5% is over $118B before considering pre-existing Section 232 and 301 lines. Inputs 1 through 3 make the net and the durability doubtful.
 
-**P(YES) ≈ P(successor regime survives challenge through FY2027) × P(gross clears ~$250B plus residual refunds | survival).** We assign roughly 0.55 to the first and roughly 0.45 to the second, giving ~0.25. Both are judgment, not derived from a reference class, and we say so: there is no prior instance of a tariff regime of this size being voided and reconstituted under different authorities within two years, so the reference class is empty.
+**P(YES) ≈ P(successor regime survives challenge through FY2027) × P(gross clears ~$250B plus residual refunds | survival).** I assign roughly 0.55 to the first and roughly 0.45 to the second, giving ~0.25. Both are judgment, not derived from a reference class, and I say so: there is no prior instance of a tariff regime of this size being voided and reconstituted under different authorities within two years, so the reference class is empty.
 
 **What would move it back up.** Congressional ratification by statute would largely settle input 3 and would justify a substantial upward revision. Appellate reversal of the Section 122 ruling would do less, since Section 122 is time-limited by design.
 

@@ -1,6 +1,6 @@
 # Calibration
 
-Reasoning behind the probabilities that changed in this revision, the reference classes behind them, and one derivation worked start to finish. Numbering is **final** (1–17); the original draft number appears in parentheses where it differs. Forecasts 15 to 17 were added when the page limit rose to 15; 16 and 17 restore forecasts cut earlier in this same revision, and that reversal is recorded in `CHANGELOG.md` section 8b.
+Reasoning behind the probabilities that changed in this revision, the reference classes behind them, and one derivation worked start to finish. Numbering is **final** (1–16); the original draft number appears in parentheses where it differs. Forecasts 15 and 16 were added when the page limit rose; 16 restores a forecast cut earlier in this same revision, and that reversal is recorded in `CHANGELOG.md` section 8b. **Forecast 17 (USD/JPY) was cut in the final compliance pass** for the reason its own derivation below already gave, that its criterion is blind to cause; the derivation is kept as the record of why it was priced and then dropped (`CHANGELOG.md` section 8e).
 
 A note on what the reference classes can and cannot bear. The environment used for this revision could not open primary documents directly — every outbound fetch to `bea.gov`, `sec.gov`, `federalreserve.gov`, `ifr.org`, provider pricing pages, and `web.archive.org` returned 403 through the proxy, and the search allowance was exhausted partway through. Where a base rate below rests on the historical record rather than on a table I could re-read this week, it says so. No count is presented as exhaustive when it was assembled by search, and `verification/` records what each source actually established.
 
@@ -122,7 +122,7 @@ The Supreme Court held 6–3 on **February 20, 2026** that IEEPA does not author
 P(YES) = P(successor regime survives challenge through FY2027) × P(gross clears ~$250B plus residual refunds | survival)
 = 0.55 × 0.45 ≈ **0.25**
 
-Both terms are judgment. There is no prior instance of a tariff regime this large being voided and reconstituted under different authorities inside two years, so the reference class is empty and we do not pretend otherwise.
+Both terms are judgment. There is no prior instance of a tariff regime this large being voided and reconstituted under different authorities inside two years, so the reference class is empty and I do not pretend otherwise.
 
 ### What would move it
 
@@ -136,7 +136,7 @@ Both terms are judgment. There is no prior instance of a tariff regime this larg
 
 The draft's fallback — MIIT China installations over the last available IFR world total — changes source and denominator simultaneously, which can move the computed share without anything happening in the world. Removed. **If the IFR discontinues the series, the forecast is unresolved.**
 
-The probability is unchanged at 68%, and the underlying data survived checking with one caveat worth recording: the 2024 observation pairs a rounded China figure (295,000) with a unit-precise world figure (542,076), and the resulting 54.4% is *our* division — the IFR's own prose says 54%. The threshold is >54.0%, so this distinction is live at the margin, and the manuscript now states the computation rather than presenting 54.4% as an IFR figure. The series also spans multiple editions, and the IFR revises back-years; the one revision I could check moved 2022 by about 0.03 points, well inside the plotted precision.
+The probability is unchanged at 68%, and the underlying data survived checking with one caveat worth recording: the 2024 observation pairs a rounded China figure (295,000) with a unit-precise world figure (542,076), and the resulting 54.4% is *my* division — the IFR's own prose says 54%. The threshold is >54.0%, so this distinction is live at the margin, and the manuscript now states the computation rather than presenting 54.4% as an IFR figure. The series also spans multiple editions, and the IFR revises back-years; the one revision I could check moved 2022 by about 0.03 points, well inside the plotted precision.
 
 One citation problem remains and is disclosed rather than papered over: the forecast cites "World Robotics 2028," an edition that does not exist yet. Given the IFR's consistent September cadence and each edition covering the prior calendar year, an edition published around September 2028 is the one that will carry calendar-2027 installations. If the IFR renames or re-times its editions, the resolution follows the **first published IFR figure for calendar-2027 installations**, whatever the edition is called.
 
@@ -151,7 +151,7 @@ Verification could not establish the current leaderboard state — the leaderboa
 Every historical bar and every comparison must use the forecast's own boundary: cash-flow **purchases of property and equipment, excluding finance leases**. Verification established that company guidance frequently does not use that boundary — Meta's guidance explicitly includes finance-lease principal payments, and Microsoft's most recent figure is stated on a fiscal-year basis net of a lease reclassification. Consequences, all visible in the figure:
 
 1. The 2026 guidance bar is drawn hatched as an **estimate**, not as an actual, and the source note states that guidance boundaries differ from the actuals line.
-2. The sell-side markers for 2027 and 2028 are **deleted**. The ">$1.0T 2027 consensus" and "UBS ≈ +6% for 2028" could not be attributed to anything citable. Under the rule that an unverified number is verified, labelled an estimate, or cut, they are cut — and the manuscript's claim is narrowed to what we can defend: we could locate no published estimate modelling a contraction.
+2. The sell-side markers for 2027 and 2028 are **deleted**. The ">$1.0T 2027 consensus" and "UBS ≈ +6% for 2028" could not be attributed to anything citable. Under the rule that an unverified number is verified, labelled an estimate, or cut, they are cut — and the manuscript's claim is narrowed to what is defensible: I could locate no published estimate modelling a contraction.
 3. The draft's orange dot plotting "forecast 9's contrarian branch" at a specific dollar level is deleted. A probability is not a data point.
 
 30% holds. It is a coherence-driven number: forecast 7 at 56% and forecast 11 at 30% both describe recognition of the same gap, and a 2028 capex contraction cannot sit near zero while those hold.
@@ -177,9 +177,9 @@ The framework does not predict that world models will disappoint. It predicts an
 
 **Sensitivity.** If the disclosure term were 0.70, the answer is 53%; if 0.40, it is 30%. The forecast is most fragile to how specifically firms describe their automation, which is a communications habit rather than a technical fact — a weakness worth naming.
 
-**What it cannot show.** Resolving YES does not establish that world models drove the automation, only that one was disclosed in the loop. Resolving NO is weak evidence, since 40% means we already expect NO more often than not. This forecast informs mainly in the YES direction.
+**What it cannot show.** Resolving YES does not establish that world models drove the automation, only that one was disclosed in the loop. Resolving NO is weak evidence, since 40% means NO is already the expected outcome. This forecast informs mainly in the YES direction.
 
-## Forecasts 16 and 17 — restored, probabilities carried
+## Forecasts 16 and 17 — restored, probabilities carried, and 17 later cut
 
 Both were cut earlier in this revision and restored when the page limit rose to 15. Neither probability was re-derived, because the environment could not re-read the underlying series; carrying the original numbers is the honest option and is recorded as such.
 
@@ -187,9 +187,9 @@ Both were cut earlier in this revision and restored when the page limit rose to 
 
 **Forecast 17 (the yen), 30%.** Original number retained, built from the August 2024 carry unwind (roughly 12% peak-to-trough in five weeks) as the reference-class event, doubled against the unconditional base rate for a seventeen-month window on the argument that yen funding sits beneath a meaningful share of AI-buildout leverage.
 
-The reason this forecast was cut, and the reason restoring it is defensible, are the same fact stated twice. The criterion resolves YES on any carry unwind, including one with no mercantilism or AI anywhere in the chain. We did not repair that by adding conditions, because every conditioning clause we considered — requiring a coincident BoJ action, or an intervention, or a named funding stress — made the forecast either unresolvable or a different forecast. So the limitation is restated in the manuscript: forecast 17 establishes co-movement with the framework, not attribution to it. Forecast 13 carries the identical caveat and is treated the same way. What the synthesis adds is a mechanism the earlier draft could not name: relationship 2 predicts fragility from correlated positioning and leverage, and the yen is the cleanest instrument on which that fragility is priced.
+The reason this forecast was cut, and the reason restoring it is defensible, are the same fact stated twice. The criterion resolves YES on any carry unwind, including one with no mercantilism or AI anywhere in the chain. I did not repair that by adding conditions, because every conditioning clause I considered — requiring a coincident BoJ action, or an intervention, or a named funding stress — made the forecast either unresolvable or a different forecast. So the limitation is restated in the manuscript: forecast 17 establishes co-movement with the framework, not attribution to it. Forecast 13 carries the identical caveat and is treated the same way. What the synthesis adds is a mechanism the earlier draft could not name: relationship 2 predicts fragility from correlated positioning and leverage, and the yen is the cleanest instrument on which that fragility is priced.
 
-The structural conditions we would ordinarily cite — where USD/JPY sits against its multi-decade range, and the Bank of Japan's tightening path — are carried from the prior draft and were not re-verified this pass. The 30% therefore rests on the reference event and the funding-channel argument alone.
+The structural conditions I would ordinarily cite — where USD/JPY sits against its multi-decade range, and the Bank of Japan's tightening path — are carried from the prior draft and were not re-verified this pass. The 30% therefore rests on the reference event and the funding-channel argument alone.
 
 ---
 

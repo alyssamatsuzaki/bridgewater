@@ -62,11 +62,11 @@ Each item was treated as a lead and re-checked against the primary record; `veri
 - **CNIL v. Amazon France Logistique.** The €32M fine was **reduced to €15M on appeal** in December 2025. Recorded.
 - **July FOMC hold and July 23 Section 301 action.** Both confirmed and kept. Two details corrected: there was no July SEP (the cadence is quarterly; the June 2026 SEP is the relevant projection), and the Section 301 exemption is a defined product carve-out rather than the draft's "goods the US cannot source elsewhere" framing.
 - **Core PCE vintage convention.** First prints hold everywhere, in prose and in figures, and the October 2025 gap is drawn as a gap. The draft's trailing note had already corrected the run to seven months at or above 3.0%; that correction is carried into the text.
-- **IFR 2024 share.** 54.4% is *our* computation from 295,000 ÷ 542,076; the IFR's own prose says 54%. The manuscript now says so, which matters because the threshold is >54.0%.
+- **IFR 2024 share.** 54.4% is *my* computation from 295,000 ÷ 542,076; the IFR's own prose says 54%. The manuscript now says so, which matters because the threshold is >54.0%.
 - **"The subsidy is gone."** Factually wrong and now removed. China's NEV purchase-tax relief was **halved** for 2026–27 (50% reduction, capped at RMB 15,000) rather than eliminated, and the trade-in program was renewed for 2026. Figure 1's title is now descriptive.
 - **Amazon depreciation.** The draft conflated two things: the $920M Q4-2024 accelerated-depreciation charge on early-retired hardware, and the separate January 2025 useful-life reduction for a subset of servers and network equipment. Table 1 separates them.
 - **Korea unmanned-store count.** Unverifiable; cut.
-- **Sell-side capex markers.** The ">$1.0T 2027 consensus" and "UBS ≈ +6% for 2028" could not be attributed to any citable published estimate. Deleted from the figure. The manuscript's claim is narrowed to what is defensible: we could locate no published estimate modelling a 2028 contraction.
+- **Sell-side capex markers.** The ">$1.0T 2027 consensus" and "UBS ≈ +6% for 2028" could not be attributed to any citable published estimate. Deleted from the figure. The manuscript's claim is narrowed to what is defensible: I could locate no published estimate modelling a 2028 contraction.
 - **Trailing verification note (draft page 18).** Deleted, and the verification it called for was performed instead. Where it could not be completed, the specific gap is listed in §8 below rather than announced to reviewers inside the manuscript.
 
 ## 6. Figures
@@ -133,7 +133,7 @@ Two disciplines were applied to the synthesis so it adds testability rather than
 
 Probabilities are carried from the original drafts (70% and 30%) rather than re-derived, because the environment could not re-read the underlying series. Forecast 15's 40% is new and derived in `calibration.md`.
 
-**Falsification logic corrected.** Low-probability forecasts cannot falsify by resolving NO, since NO is what we already expect. The manuscript now says so explicitly: forecast 17's informative direction is YES, as is forecast 15's, and only forecasts priced above even odds carry falsifying power in the NO direction. Forecast 16 at 70% is added to the falsification block on that basis.
+**Falsification logic corrected.** Low-probability forecasts cannot falsify by resolving NO, since NO is already the expected outcome. The manuscript now says so explicitly: forecast 17's informative direction is YES, as is forecast 15's, and only forecasts priced above even odds carry falsifying power in the NO direction. Forecast 16 at 70% is added to the falsification block on that basis.
 
 **Correlation recounted.** Seventeen forecasts, roughly nine independent tests. Forecast 16 improves the ratio because a transit program on a fixed deadline shares almost no driver with the AI buildout.
 
@@ -193,7 +193,7 @@ Run against the rules as verified on observatory.bwater.com, which override the 
 
 **Forecast 7's prior restated at its true precision.** The 0.80 cancellation term was asserted. Its reference class is one directly observed episode, the Microsoft pullback, so it is now stated as roughly four in five with the reference class and its size named. The 56% product is unchanged. Forecast 6 already named its base rate (one relevant case in eight years) and was left alone.
 
-**Structure rebuilt for a reviewer who stops at page 10.** Part 2 ran to roughly five pages against a stated three-page maximum, and Table 2, the resolution mechanics, and the Self-Audit all sat past page 10. Part 2 is now 2.9 pages, achieved by converting both mapping tables to prose, folding the "where we differ" column into the claims themselves, moving the figures into Part 3, and dropping an epigraph that restated the title epigraph. Part 3 was reordered to open with the Self-Audit, which now leads with the falsification patterns, then Table 2, then the derivations with forecasts 13, 14, 7, and 8 first. Self-Audit lands on page 5, Table 2 on page 6, and all four of those derivations inside page 10. Total fell from 15 pages to 14, with provenance labeled supplementary at the end.
+**Structure rebuilt for a reviewer who stops at page 10.** Part 2 ran to roughly five pages against a stated three-page maximum, and Table 2, the resolution mechanics, and the Self-Audit all sat past page 10. Part 2 is now 2.9 pages, achieved by converting both mapping tables to prose, folding the where-it-differs column into the claims themselves, moving the figures into Part 3, and dropping an epigraph that restated the title epigraph. Part 3 was reordered to open with the Self-Audit, which now leads with the falsification patterns, then Table 2, then the derivations with forecasts 13, 14, 7, and 8 first. Self-Audit lands on page 5, Table 2 on page 6, and all four of those derivations inside page 10. Total fell from 15 pages to 14, with provenance labeled supplementary at the end.
 
 **The correlation disclosure moved into Part 2**, beside where the clusters are introduced. Read late it looked like a concession; read early it reads as command of the portfolio.
 

@@ -1,4 +1,8 @@
-# Changelog — July 2026 revision
+# Changelog
+
+**Current state (August 1, 2026): 14 pages, 16 forecasts, 5 figures. Part 2 is 2.9 pages; the Self-Audit lands on page 5 and Table 2 on page 6.** Sections 1 through 7 below are the dated record of the July 2026 revision and describe the document as it stood then, not as it stands now. Sections 8a through 8e carry the later passes in order.
+
+## The July 2026 revision
 
 From an 18-page, 18-forecast, 10-figure draft to a 10-page, 14-forecast, 5-figure submission. Original text, figures, and build code are preserved in `archive/original/`. Forecast numbers below are given as **old → new** where they changed.
 

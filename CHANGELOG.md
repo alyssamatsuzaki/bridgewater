@@ -173,6 +173,28 @@ A full research pass over every major claim and forecast, run after the July 30â
 
 **Open items carried forward.** The Digital Omnibus scope question is the highest-priority unresolved item: if the deferral does not cover workplace AI, forecast 6 is underpriced. Thailand's Section 301 tier is unconfirmed. Forecast 2's baseline remains uncapturable. Nothing was changed on any of these.
 
+## 8e. Final compliance pass against the published brief
+
+Run against the rules as verified on observatory.bwater.com, which override the judging panel's opinions. The panel scored the paper without checking it against those rules and without evaluating the round-one filter on generic LLM output, so only its convergent criticism was acted on.
+
+**Forecast 17 (USD/JPY) cut; sixteen remain.** The brief's floor is ten binary forecasts, not twenty, so a seventeen-forecast paper had room to lose its weakest thematic link. Forecast 17 was the only one in the set whose criterion was blind to cause by its own admission: an ordinary carry unwind resolved it YES while carrying no mercantilism or AI in the chain, meaning it could not help the framework even when it won. Cutting it recovered roughly a page and improved the independent-test ratio. It cost relationship 2 its cleanest instrument, and Part 2 now says so rather than hiding the consequence.
+
+**Forecast 16 kept and its thematic link rewritten.** The link previously read as analogy. It now runs through a shared input market: the LA Metro program bids for the same transformers, switchgear, interconnection work, and skilled electrical trades as datacenter construction, under the same tariff schedule. It was not repriced. One panel report argued 70% is high because the March 2024 board action substituted achievable projects, which double-counts a correction the resolution criteria already make by governing on the revised list.
+
+**A stale cross-reference fixed.** Thread 1 read "if forecast 13 resolves NO while forecast 6 resolves YES, capacity automated in place." Under current numbering 13 is core PCE and 6 is EU enforcement, neither of which bears on the claim. The sentence survived an earlier renumbering. Capacity automating in place requires imports from Vietnam and Thailand to fall while China holds its robot share, so the reference is now to forecasts 12 and 5.
+
+**Forecast 2's provenance claim corrected.** Table 2 asserted that all three baseline readings were in the data files. Only OpenAI's is, and it is `snapshot_secondary_only`; the Anthropic and Google baselines were never captured. Rather than fill the gap, the claim was lowered: the OpenAI baseline of $30.00 per 1M output tokens is now printed in the body, and Table 2 specifies that a provider whose July 31, 2026 baseline cannot be established at resolution time drops out while the forecast resolves on the rest. No number needed to score any forecast now depends on opening the attachment.
+
+**Forecast 10 can no longer evade resolution.** The prior criterion left it unresolved if LMArena were discontinued, which scores nothing on either calibration or resolution. Table 2 now names Artificial Analysis's Intelligence Index under the same 30-consecutive-day rule, and states plainly that it measures something different and could reverse the outcome.
+
+**Forecast 7's prior restated at its true precision.** The 0.80 cancellation term was asserted. Its reference class is one directly observed episode, the Microsoft pullback, so it is now stated as roughly four in five with the reference class and its size named. The 56% product is unchanged. Forecast 6 already named its base rate (one relevant case in eight years) and was left alone.
+
+**Structure rebuilt for a reviewer who stops at page 10.** Part 2 ran to roughly five pages against a stated three-page maximum, and Table 2, the resolution mechanics, and the Self-Audit all sat past page 10. Part 2 is now 2.9 pages, achieved by converting both mapping tables to prose, folding the "where we differ" column into the claims themselves, moving the figures into Part 3, and dropping an epigraph that restated the title epigraph. Part 3 was reordered to open with the Self-Audit, which now leads with the falsification patterns, then Table 2, then the derivations with forecasts 13, 14, 7, and 8 first. Self-Audit lands on page 5, Table 2 on page 6, and all four of those derivations inside page 10. Total fell from 15 pages to 14, with provenance labeled supplementary at the end.
+
+**The correlation disclosure moved into Part 2**, beside where the clusters are introduced. Read late it looked like a concession; read early it reads as command of the portfolio.
+
+**Two instructions were not followed, and both were conflicts with the file.** The barbell rule of nothing between 40% and 60% cannot be stated, because forecasts 7 and 13 sit at 56% and 55% and both are protected derivations whose arithmetic put them there. Repricing either to satisfy a stylistic rule would be the threshold-chasing the rules forbid. The header distribution sentence now states the set as it actually is, including the two middle values and why they stand. No probability was moved in this pass.
+
 ## 9. Reproducibility
 
 - All hard-coded absolute paths (`/home/claude/ftf/`, `/mnt/user-data/outputs/`) replaced with project-relative `pathlib` paths.

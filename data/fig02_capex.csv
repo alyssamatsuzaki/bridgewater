@@ -6,4 +6,5 @@ year,value_usd_b,kind,status
 2023,148,actual,carried_unverified
 2024,230,actual,search_confirmed
 2025,410,actual,search_confirmed
-2026,700,guidance,estimate
+2026,725,guidance,search_confirmed
+2027,1000,consensus,estimate

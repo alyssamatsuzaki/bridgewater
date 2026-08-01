@@ -98,6 +98,40 @@ The pull between "companies avoid quantifying retreat" and "filings and transcri
 
 ---
 
+## Forecast 14 — net customs duties: 70% → **25%**, forced by an external ruling
+
+The only forecast in the set repriced by an event rather than by rethinking. Evidence in `verification/V11_august_2026_sweep.md` §§1–3; the full derivation is in `research_companion.md` §5.
+
+### What the 70% assumed
+
+FY2025 net customs duties printed $194.9B against a $250B FY2027 threshold. The series had risen $118B in one year. A further $55B over two years read as a modest ask, and refund litigation was treated as a discount rather than as a regime question.
+
+### What broke the assumption
+
+The Supreme Court held 6–3 on **February 20, 2026** that IEEPA does not authorize tariffs, retroactive to inception. This is not a haircut on a growth path. It removes the statutory basis for most of what produced the FY2025 figure.
+
+### The four inputs
+
+1. **Refunds subtract from the resolution line.** The forecast resolves on *net* duties. The Court of International Trade ordered ~$165B refunded with interest, in stages; Penn Wharton put revenue at risk above $175B. June 2026 net already printed **−$25.6B** ($23.6B gross against $49.2B refunded).
+2. **Replacement is partial.** CRFB (2026-07-23): Section 301 and 338 restore **under 60%** of lost IEEPA revenue; post-January-2025 actions score ~**$825B below** CBO's February 2026 baseline through FY2036.
+3. **Replacement is contested.** Section 122, the February bridge, was ruled illegal by the CIT pending appeal.
+4. **The base is large.** Section 301 covers ~**$949B** of 2026 imports at 10–12.5%, which is over $118B of gross before pre-existing 232 and 301 lines.
+
+### Derivation
+
+P(YES) = P(successor regime survives challenge through FY2027) × P(gross clears ~$250B plus residual refunds | survival)
+= 0.55 × 0.45 ≈ **0.25**
+
+Both terms are judgment. There is no prior instance of a tariff regime this large being voided and reconstituted under different authorities inside two years, so the reference class is empty and we do not pretend otherwise.
+
+### What would move it
+
+**Up:** Congressional ratification by statute would largely settle input 3 and justify a substantial revision. Appellate reversal on Section 122 would do less, since that authority is time-limited by design.
+
+**Down:** an adverse ruling on the Section 301 forced-labor actions, or a refund schedule extending materially into FY2027.
+
+---
+
 ## Forecast 5 (was 6) — robots: fallback corrected, 68% held
 
 The draft's fallback — MIIT China installations over the last available IFR world total — changes source and denominator simultaneously, which can move the computed share without anything happening in the world. Removed. **If the IFR discontinues the series, the forecast is unresolved.**

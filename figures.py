@@ -169,8 +169,9 @@ def fig_capex():
     ax.set_title("Purchases of property and equipment: Microsoft, Alphabet, Amazon, Meta",
                  loc="left", pad=9)
     src(fig, "Sources: company SEC cash-flow statements, calendar-quarter sums of “purchases of property and equipment,” finance leases excluded\n"
-             "(navy = reported actuals). The hatched 2026 bar is company guidance, on boundaries that differ between companies. data/fig02_capex.csv.",
-        y=-0.04)
+             "(navy = reported actuals). Hatched 2026 = company guidance, on boundaries that differ between companies; hollow 2027 = analyst\n"
+             "consensus, a projection and not guidance. Three epistemic classes, three marks. data/fig02_capex.csv.",
+        y=-0.055)
     save(fig, "fig02_capex")
 
 

@@ -149,6 +149,30 @@ The framework already ran a causal chain from conditions through perception, pre
 
 **Claim 1's income inversion sharpened.** Thailand at 19.4% BEV share against a several-times-richer Japan below 3% was already stated. The paper now draws the conclusion: availability at a price point determines what people drive, availability is set upstream by trade and subsidy policy, and preference adjusts to what reaches the lot.
 
+## 8d. August 2026 sweep: re-examination against post-anchor evidence
+
+A full research pass over every major claim and forecast, run after the July 30–31 anchors. Evidence recorded in `verification/V11_august_2026_sweep.md`; analysis, additional figures, and per-forecast reassessment in `research_companion.md`. The submission stayed at its 15-page limit, so the sweep's quantitative build-out lives in the companion rather than the manuscript.
+
+**Tooling constraint, unchanged.** `curl` and `WebFetch` both returned 403 at every host including controls; `WebSearch` worked. No primary document was opened this session. Every new figure is `search_confirmed` at best, never `primary_confirmed`, and the companion says so once at the top rather than repeating it per number.
+
+**The Supreme Court voided the IEEPA tariffs, and the paper had not said so.** On February 20, 2026 the Court held 6–3 that IEEPA does not authorize tariffs, retroactive to inception. The CIT ordered ~$165B refunded; Penn Wharton put revenue at risk above $175B; CBP opened phase-one refunds on April 20. The prior draft referred only to "litigation-driven refunds" and never named the ruling. This was the largest evidentiary gap in the manuscript and is also directly on-thesis: an institution outside the executive forced a correction the political system had not, which is relationship 1 running through the judiciary rather than through prices.
+
+**Forecast 14 repriced 70% → 25%.** Derivation in `calibration.md`. Refunds subtract from the net line the forecast resolves on and have already carried one month below zero; CRFB puts Section 301 and 338 replacement at under 60% of lost revenue; the Section 122 bridge was itself ruled illegal pending appeal. Held above a floor because Section 301 covers ~$949B of imports at 10–12.5% and Congress may still ratify by statute.
+
+**Forecast 1's mechanism corrected.** Penetration prints support the forecast more strongly than the draft claimed (61.4% April, 63.0% May, 62.8% June). The mechanism did not: NEV retail units fell 5% y/y in May and 7% in June while total passenger-vehicle sales fell 20% y/y in April, so the share rose because the denominator fell faster. The draft read a ratio as adoption. A competing pull-forward account is stated and not resolved.
+
+**The IEA's rival mechanism for forecast 3 named.** The IEA attributes part of China's gasoline decline to high pump prices discouraging ICE driving rather than to fleet displacement. Forecast 3 is the discriminating test between the two, so naming the rival strengthens the ratchet framing rather than weakening it.
+
+**Forecast 17's acknowledged gap closed.** The prior draft conceded that the USD/JPY level and BoJ path were carried and unverified. Both are now read: 159.41 on July 31 2026, BoJ at 1.0% after a June hike, held 8–1 in July. Probability unchanged at 30%.
+
+**Claim 3 now argued from behaviour rather than statute.** Meta's CTO confirmed no opt-out for the MCI program, 1,600+ employees petitioned against it, and European employees were excluded because GDPR does not permit the collection. One firm, one program, permitted in one jurisdiction and barred in another.
+
+**Figure 2 refreshed.** 2026 guidance 700 → 725 ($B), and a 2027 analyst-consensus marker added at $1T using the figure's existing third mark, so actuals, guidance, and projection are now three visually distinct classes. Company-level splits were deliberately **not** adopted: V06's boundary work (fiscal-year and finance-lease differences) needs filings this session could not fetch.
+
+**Three companion figures added**, built by `companion_figures.py` from `data/companion/`: the FY customs break with the June decomposition, the NEV penetration-versus-numerator pair, and the repricing history. Each carries underlying values, citation, limitations, and a reported-versus-estimated note. The FY2026 customs bar is drawn as a nine-month partial and is **not** annualized.
+
+**Open items carried forward.** The Digital Omnibus scope question is the highest-priority unresolved item: if the deferral does not cover workplace AI, forecast 6 is underpriced. Thailand's Section 301 tier is unconfirmed. Forecast 2's baseline remains uncapturable. Nothing was changed on any of these.
+
 ## 9. Reproducibility
 
 - All hard-coded absolute paths (`/home/claude/ftf/`, `/mnt/user-data/outputs/`) replaced with project-relative `pathlib` paths.
